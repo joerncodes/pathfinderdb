@@ -1,0 +1,25 @@
+App\Entity\MagicSchool:
+  abj:
+    name: Abjuration
+    slug: abjuration
+  conj:
+    name: Conjuration
+    slug: conjuration
+  divi:
+    name: Divination
+    slug: divination
+  ench:
+    name: Enchantment
+    slug: enchantment
+  evoc:
+    name: Evocation
+    slug: evocation
+  illu:
+    name: Illusion
+    slug: illusion
+  necro:
+    name: Necromancy
+    slug: necromancy
+  trans:
+    name: Transmutation
+    slug: transmutation
