@@ -1,0 +1,25 @@
+App\Entity\Ability:
+  str:
+    name: Strength
+    slug: strength
+    acronym: STR
+  dex:
+    name: Dexterity
+    slug: dexterity
+    acronym: DEX
+  con:
+    name: Constitution
+    slug: constitution
+    acronym: CON
+  int:
+    name: Intelligence
+    slug: intelligence
+    acronym: INT
+  wis:
+    name: Wisdom
+    slug: wisdom
+    acronym: WIS
+  cha:
+    name: Charisma
+    slug: charisma
+    acronym: CHA
