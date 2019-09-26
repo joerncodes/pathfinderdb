@@ -4,13 +4,70 @@ App\Entity\CharacterClass:
     slug: barbarian
     hitDie: d12
     alignment: Any non-lawful
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@acrobatics"
+      - "@climb"
+      - "@craft"
+      - "@handle-animal"
+      - "@intimidate"
+      - "@knowledge-nature"
+      - "@perception"
+      - "@ride"
+      - "@survival"
+      - "@swim"
   bard:
     name: Bard
     slug: bard
     hitDie: d8
     alignment: Any
+    skillRanksPerLevel: 6 + INT modifier
+    classSkills:
+      - "@acrobatics"
+      - "@appraise"
+      - "@bluff"
+      - "@climb"
+      - "@craft"
+      - "@diplomacy"
+      - "@disguise"
+      - "@escape-artist"
+      - "@intimidate"
+      - "@knowledge-arcana"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-engineering"
+      - "@knowledge-geography"
+      - "@knowledge-history"
+      - "@knowledge-local"
+      - "@knowledge-nature"
+      - "@knowledge-nobility"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@linguistics"
+      - "@perception"
+      - "@perform"
+      - "@profession"
+      - "@sense-motive"
+      - "@sleight-of-hand"
+      - "@spellcraft"
+      - "@stealth"
+      - "@use-magic-device"
   cleric:
     name: Cleric
     slug: cleric
     hitDie: d8
     alignment: A cleric's alignment must be within one step of her deity's, along either the law/chaos axis or the good/evil axis.
+    skillRanksPerLevel: 2 + INT modifier
+    classSkills:
+      - "@appraise"
+      - "@craft"
+      - "@diplomacy"
+      - "@heal"
+      - "@knowledge-arcana"
+      - "@knowledge-history"
+      - "@knowledge-nobility"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@linguistics"
+      - "@profession"
+      - "@sense-motive"
+      - "@spellcraft"

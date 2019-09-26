@@ -2,27 +2,27 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\AbilityRepository")
  * @ApiResource(
  *     collectionOperations={"get"={"method"="GET"}},
  *     itemOperations={"get"={"method"="GET"}},
  *     normalizationContext={"groups"={"read"}},
  *     denormalizationContext={"groups"={"write"}}
  * )
+ * @ORM\Entity(repositoryClass="App\Repository\SkillRepository")
  */
-class Ability
+class Skill
 {
     /**
      * @ORM\Id()
      * @ORM\GeneratedValue()
      * @ORM\Column(type="integer")
+     * @ApiProperty(identifier=false)
      */
     private $id;
 
@@ -34,24 +34,28 @@ class Ability
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @ApiProperty(identifier=true)
      */
     private $slug;
 
     /**
-     * @ORM\Column(type="string", length=3)
+     * @ORM\Column(type="boolean")
      * @Groups("read")
      */
-    private $acronym;
+    private $untrained;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Skill", mappedBy="ability")
+     * @ORM\Column(type="boolean")
+     * @Groups("read")
      */
-    private $skills;
+    private $armorCheckPenalty;
 
-    public function __construct()
-    {
-        $this->skills = new ArrayCollection();
-    }
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Ability", inversedBy="skills")
+     * @ORM\JoinColumn(nullable=false)
+     * @Groups("read")
+     */
+    private $ability;
 
     public function getId(): ?int
     {
@@ -82,45 +86,38 @@ class Ability
         return $this;
     }
 
-    public function getAcronym(): ?string
+    public function getUntrained(): ?bool
     {
-        return $this->acronym;
+        return $this->untrained;
     }
 
-    public function setAcronym(string $acronym): self
+    public function setUntrained(bool $untrained): self
     {
-        $this->acronym = $acronym;
+        $this->untrained = $untrained;
 
         return $this;
     }
 
-    /**
-     * @return Collection|Skill[]
-     */
-    public function getSkills(): Collection
+    public function getArmorCheckPenalty(): ?bool
     {
-        return $this->skills;
+        return $this->armorCheckPenalty;
     }
 
-    public function addSkill(Skill $skill): self
+    public function setArmorCheckPenalty(bool $armorCheckPenalty): self
     {
-        if (!$this->skills->contains($skill)) {
-            $this->skills[] = $skill;
-            $skill->setAbility($this);
-        }
+        $this->armorCheckPenalty = $armorCheckPenalty;
 
         return $this;
     }
 
-    public function removeSkill(Skill $skill): self
+    public function getAbility(): ?Ability
     {
-        if ($this->skills->contains($skill)) {
-            $this->skills->removeElement($skill);
-            // set the owning side to null (unless already changed)
-            if ($skill->getAbility() === $this) {
-                $skill->setAbility(null);
-            }
-        }
+        return $this->ability;
+    }
+
+    public function setAbility(?Ability $ability): self
+    {
+        $this->ability = $ability;
 
         return $this;
     }

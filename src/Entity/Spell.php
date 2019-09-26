@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiSubresource;
 use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiProperty;
@@ -39,6 +40,7 @@ class Spell
      * @ORM\ManyToOne(targetEntity="App\Entity\MagicSchool", inversedBy="spells")
      * @Groups("read")
      * @ORM\JoinColumn(nullable=false)
+     * @ApiSubresource()
      */
     private $school;
 
