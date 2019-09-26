@@ -12,7 +12,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ApiResource(
  *     collectionOperations={"get"={"method"="GET"}},
- *     itemOperations={"get"={"method"="GET"}}
+ *     itemOperations={"get"={"method"="GET"}},
+ *     shortName="school"
  * )
  * @ORM\Entity(repositoryClass="App\Repository\MagicSchoolRepository")
  */

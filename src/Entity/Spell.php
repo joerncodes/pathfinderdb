@@ -15,7 +15,6 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     itemOperations={"get"={"method"="GET"}},
  *     normalizationContext={"groups"={"read"}},
  *     denormalizationContext={"groups"={"write"}}
-
  * )
  * @ORM\Entity(repositoryClass="App\Repository\SpellRepository")
  */
