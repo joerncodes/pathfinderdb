@@ -21,23 +21,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * )
  * @ORM\Entity(repositoryClass="App\Repository\SpellRepository")
  */
-class Spell
+class Spell extends ApiBase
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     * @ApiProperty(identifier=false)
-     */
-    private $id;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     * @ApiFilter(SearchFilter::class, strategy="partial")
-     * @Groups("read")
-     */
-    private $name;
-
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\MagicSchool", inversedBy="spells")
      * @Groups("read")
@@ -45,12 +30,6 @@ class Spell
      * @ApiSubresource()
      */
     private $school;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     * @ApiProperty(identifier=true)
-     */
-    private $slug;
 
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
@@ -112,11 +91,6 @@ class Spell
         $this->descriptionObject = $descriptionObject;
     }
 
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
     /**
      * "Range" is reserved in MySQL.
      *
@@ -126,18 +100,6 @@ class Spell
     public function getRange(): ?string
     {
         return $this->spellRange;
-    }
-
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
-
-    public function setName(string $name): self
-    {
-        $this->name = $name;
-
-        return $this;
     }
 
     /**
@@ -158,18 +120,6 @@ class Spell
     public function setSchool(?MagicSchool $school): self
     {
         $this->school = $school;
-
-        return $this;
-    }
-
-    public function getSlug(): ?string
-    {
-        return $this->slug;
-    }
-
-    public function setSlug(string $slug): self
-    {
-        $this->slug = $slug;
 
         return $this;
     }

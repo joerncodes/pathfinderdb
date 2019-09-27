@@ -16,28 +16,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * )
  * @ORM\Entity(repositoryClass="App\Repository\SkillRepository")
  */
-class Skill
+class Skill extends ApiBase
 {
-    /**
-     * @ORM\Id()
-     * @ORM\GeneratedValue()
-     * @ORM\Column(type="integer")
-     * @ApiProperty(identifier=false)
-     */
-    private $id;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     * @Groups("read")
-     */
-    private $name;
-
-    /**
-     * @ORM\Column(type="string", length=100)
-     * @ApiProperty(identifier=true)
-     */
-    private $slug;
-
     /**
      * @ORM\Column(type="boolean")
      * @Groups("read")
@@ -56,35 +36,6 @@ class Skill
      * @Groups("read")
      */
     private $ability;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
-
-    public function getName(): ?string
-    {
-        return $this->name;
-    }
-
-    public function setName(string $name): self
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
-    public function getSlug(): ?string
-    {
-        return $this->slug;
-    }
-
-    public function setSlug(string $slug): self
-    {
-        $this->slug = $slug;
-
-        return $this;
-    }
 
     public function getUntrained(): ?bool
     {
