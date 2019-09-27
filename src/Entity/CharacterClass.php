@@ -77,10 +77,22 @@ class CharacterClass extends ApiBase
         return $this;
     }
 
+    public function getClassSkills(): array
+    {
+        $classSkills = [];
+        foreach($this->getClassSkillsCollection() as $skill)
+        {
+            $classSkills[] = sprintf('%s (%s)',
+                $skill->getName(), $skill->getAbility()->getAcronym());
+        }
+
+        return $classSkills;
+    }
+
     /**
      * @return Collection|Skill[]
      */
-    public function getClassSkills(): Collection
+    public function getClassSkillsCollection(): Collection
     {
         return $this->classSkills;
     }
