@@ -9,3 +9,8 @@ App\Entity\Source:
     slug: advanced-players-guide
     copyright: "© 2010, Paizo Publishing, LLC; Author: Jason Bulmahn."
     link: https://www.amazon.com/dp/1601252463/ref=cm_sw_em_r_mt_dp_U_2xCJDbEAC5CZ2
+  ultimate-magic:
+    name: "Pathfinder Roleplaying Game: Ultimate Magic"
+    slug: ultimate-magic
+    copyright: "© 2011, Paizo Publishing, LLC; Authors: Jason Bulmahn, Tim Hitchcock, Colin McComb, Rob McCreary, Jason Nelson, Stephen Radney-MacFarland, Sean K Reynolds, Owen K.C. Stephens, and Russ Taylor."
+    link: https://www.amazon.com/dp/1601252994/ref=cm_sw_em_r_mt_dp_U_JeGJDbVEQFW7A

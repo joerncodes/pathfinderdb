@@ -20,3 +20,157 @@ App\Entity\CharacterClass:
       - "@survival"
       - "@use-magic-device"
     source: "@advanced-players-guide"
+  cavalier:
+    name: Cavalier
+    slug: cavalier
+    hitDie: d10
+    alignment: Any
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@bluff"
+      - "@climb"
+      - "@craft"
+      - "@diplomacy"
+      - "@handle-animal"
+      - "@intimidate"
+      - "@profession"
+      - "@ride"
+      - "@sense-motive"
+      - "@swim"
+    source: "@advanced-players-guide"
+  gunslinger:
+    name: Gunslinger
+    slug: gunslinger
+    hitDie: d10
+    alignment: Any
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@acrobatics"
+      - "@bluff"
+      - "@climb"
+      - "@craft"
+      - "@handle-animal"
+      - "@heal"
+      - "@intimidate"
+      - "@knowledge-engineering"
+      - "@knowledge-local"
+      - "@perception"
+      - "@profession"
+      - "@ride"
+      - "@sleight-of-hand"
+      - "@survival"
+      - "@swim"
+    source: "@advanced-players-guide"
+  inquisitor:
+    name: Inquisitor
+    slug: inquisitor
+    hitDie: d8
+    alignment: "An inquisitor’s alignment must be within one step of her deity’s, along either the law/chaos axis or the good/evil axis."
+    skillRanksPerLevel: 6 + INT modifier
+    classSkills:
+      - "@bluff"
+      - "@climb"
+      - "@craft"
+      - "@diplomacy"
+      - "@disguise"
+      - "@heal"
+      - "@intimidate"
+      - "@knowledge-arcana"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-nature"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@perception"
+      - "@profession"
+      - "@ride"
+      - "@sense-motive"
+      - "@spellcraft"
+      - "@stealth"
+      - "@survival"
+      - "@swim"
+    source: "@advanced-players-guide"
+  magus:
+    name: Magus
+    slug: magus
+    hitDie: d8
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modifier
+    classSkills:
+      - "@climb"
+      - "@craft"
+      - "@fly"
+      - "@intimidate"
+      - "@knowledge-arcana"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-planes"
+      - "@profession"
+      - "@ride"
+      - "@spellcraft"
+      - "@swim"
+      - "@use-magic-device"
+    source: "@ultimate-magic"
+  oracle:
+    name: Oracle
+    slug: oracle
+    hitDie: d8
+    alignment: Any
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@craft"
+      - "@diplomacy"
+      - "@heal"
+      - "@knowledge-history"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@profession"
+      - "@sense-motive"
+      - "@spellcraft"
+    source: "@advanced-players-guide"
+  summoner:
+    name: Summoner
+    slug: summoner
+    hitDie: d8
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modifier
+    classSkills:
+      - "@craft"
+      - "@fly"
+      - "@handle-animal"
+      - "@knowledge-arcana"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-engineering"
+      - "@knowledge-geography"
+      - "@knowledge-history"
+      - "@knowledge-local"
+      - "@knowledge-nature"
+      - "@knowledge-nobility"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@linguistics"
+      - "@profession"
+      - "@ride"
+      - "@spellcraft"
+      - "@use-magic-device"
+    source: "@advanced-players-guide"
+  witch:
+    name: Witch
+    slug: witch
+    hitDie: d6
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modified
+    classSkills:
+      - "@craft"
+      - "@fly"
+      - "@heal"
+      - "@intimidate"
+      - "@knowledge-arcana"
+      - "@knowledge-history"
+      - "@knowledge-nature"
+      - "@knowledge-planes"
+      - "@profession"
+      - "@spellcraft"
+      - "@use-magic-device"
+    source: "@advanced-players-guide"
+
+
+

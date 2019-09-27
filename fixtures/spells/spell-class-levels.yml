@@ -1,0 +1,9 @@
+App\Entity\SpellClassLevel:
+  cure-light-wounds-level-{alchemist, bard, cleric, oracle, druid, inquisitor, paladin, witch}:
+    spell: "@cure-light-wounds"
+    characterClass: '@<current()>'
+    level: 1
+  cure-light-wounds-level-ranger:
+    spell: "@cure-light-wounds"
+    characterClass: '@ranger'
+    level: 2

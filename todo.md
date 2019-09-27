@@ -5,8 +5,10 @@
 
 ## Content
 
+- [ ] markdown import on fixture loading
+- [ ] Affiliate links for sources
 - [ ] Full core classes
-    - [ ] base info
+    - [X] base info
     - [ ] advancement
 - [ ] Full base classes
     - [X] base info

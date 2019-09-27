@@ -1,5 +1,0 @@
-App\Entity\SpellClassLevel:
-  cure-light-wounds-level-{paladin, cleric, druid}:
-    spell: "@cure-light-wounds"
-    characterClass: '@<current()>'
-    level: 1
