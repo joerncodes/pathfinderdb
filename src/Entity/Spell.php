@@ -2,10 +2,6 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiSubresource;
-use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
-use ApiPlatform\Core\Annotation\ApiFilter;
-use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Domain\ValueObject\Markdown;
 use App\Entity\Traits\HasSourceTrait;
@@ -201,15 +197,15 @@ class Spell extends ApiBase
 
     /**
      * @Groups("read")
+     *
      * @return array
      */
     public function getLevels(): array
     {
         $result = [];
-        foreach($this->spellClassLevels as $spellClassLevel)
-        {
+        foreach ($this->spellClassLevels as $spellClassLevel) {
             $result[] =
-                $spellClassLevel->getCharacterClass()->getName() . ' ' . $spellClassLevel->getLevel();
+                $spellClassLevel->getCharacterClass()->getName().' '.$spellClassLevel->getLevel();
         }
 
         return $result;

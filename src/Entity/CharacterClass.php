@@ -2,7 +2,6 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Entity\Traits\HasSourceTrait;
 use Doctrine\Common\Collections\ArrayCollection;
@@ -52,12 +51,18 @@ class CharacterClass extends ApiBase
      */
     private $spellClassLevels;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\CharacterClassAdvancement", mappedBy="characterClass", orphanRemoval=true)
+     * @Groups("read")
+     */
+    private $advancement;
+
     public function __construct()
     {
         $this->classSkills = new ArrayCollection();
         $this->spellClassLevels = new ArrayCollection();
+        $this->advancement = new ArrayCollection();
     }
-
 
     public function getHitDie(): ?string
     {
@@ -86,8 +91,7 @@ class CharacterClass extends ApiBase
     public function getClassSkills(): array
     {
         $classSkills = [];
-        foreach($this->getClassSkillsCollection() as $skill)
-        {
+        foreach ($this->getClassSkillsCollection() as $skill) {
             $classSkills[] = sprintf('%s (%s)',
                 $skill->getName(), $skill->getAbility()->getAcronym());
         }
@@ -158,6 +162,37 @@ class CharacterClass extends ApiBase
             // set the owning side to null (unless already changed)
             if ($spellClassLevel->getCharacterClass() === $this) {
                 $spellClassLevel->setCharacterClass(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|CharacterClassAdvancement[]
+     */
+    public function getAdvancement(): Collection
+    {
+        return $this->advancement;
+    }
+
+    public function addAdvancement(CharacterClassAdvancement $advancement): self
+    {
+        if (!$this->advancement->contains($advancement)) {
+            $this->advancement[] = $advancement;
+            $advancement->setCharacterClass($this);
+        }
+
+        return $this;
+    }
+
+    public function removeAdvancement(CharacterClassAdvancement $advancement): self
+    {
+        if ($this->advancement->contains($advancement)) {
+            $this->advancement->removeElement($advancement);
+            // set the owning side to null (unless already changed)
+            if ($advancement->getCharacterClass() === $this) {
+                $advancement->setCharacterClass(null);
             }
         }
 

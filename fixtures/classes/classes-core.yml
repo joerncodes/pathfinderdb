@@ -131,3 +131,69 @@ App\Entity\CharacterClass:
       - "@sense-motive"
       - "@spellcraft"
     source: "@core-rulebook"
+  ranger:
+    name: Ranger
+    slug: ranger
+    hitDie: d10
+    alignment: Any
+    skillRanksPerLevel: 6 + INT modified
+    classSkills:
+      - "@climb"
+      - "@craft"
+      - "@handle-animal"
+      - "@heal"
+      - "@intimidate"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-geography"
+      - "@knowledge-nature"
+      - "@perception"
+      - "@profession"
+      - "@ride"
+      - "@spellcraft"
+      - "@stealth"
+      - "@survival"
+      - "@swim"
+    source: "@core-rulebook"
+  sorcerer:
+    name: Sorcerer
+    slug: sorcerer
+    hitDie: d6
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modified
+    classSkills:
+      - "@appraise"
+      - "@bluff"
+      - "@craft"
+      - "@fly"
+      - "@intimidate"
+      - "@knowledge-arcana"
+      - "@profession"
+      - "@spellcraft"
+      - "@use-magic-device"
+    source: "@core-rulebook"
+  wizard:
+    name: Wizard
+    slug: wizard
+    hitDie: d6
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modified
+    classSkills:
+      - "@appraise"
+      - "@craft"
+      - "@fly"
+      - "@knowledge-arcana"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-engineering"
+      - "@knowledge-geography"
+      - "@knowledge-history"
+      - "@knowledge-local"
+      - "@knowledge-nature"
+      - "@knowledge-nobility"
+      - "@knowledge-planes"
+      - "@knowledge-religion"
+      - "@linguistics"
+      - "@profession"
+      - "@spellcraft"
+    source: "@core-rulebook"
+
+
