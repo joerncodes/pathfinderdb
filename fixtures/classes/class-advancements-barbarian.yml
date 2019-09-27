@@ -1,0 +1,141 @@
+App\Entity\CharacterClassAdvancement:
+  barbarian-1:
+    characterClass: "@barbarian"
+    level: 1
+    baseAttackBonus: "+1"
+    fortitudeSave: 2
+    reflexSave: 0
+    willSave: 0
+  barbarian-2:
+    characterClass: "@barbarian"
+    level: 2
+    baseAttackBonus: "+2"
+    fortitudeSave: 3
+    reflexSave: 0
+    willSave: 0
+  barbarian-3:
+    characterClass: "@barbarian"
+    level: 3
+    baseAttackBonus: "+3"
+    fortitudeSave: 3
+    reflexSave: 1
+    willSave: 1
+  barbarian-4:
+    characterClass: "@barbarian"
+    level: 4
+    baseAttackBonus: "+4"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 1
+  barbarian-5:
+    characterClass: "@barbarian"
+    level: 5
+    baseAttackBonus: "+5"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 1
+  barbarian-6:
+    characterClass: "@barbarian"
+    level: 6
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 2
+  barbarian-7:
+    characterClass: "@barbarian"
+    level: 7
+    baseAttackBonus: "+7/+2"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 2
+  barbarian-8:
+    characterClass: "@barbarian"
+    level: 8
+    baseAttackBonus: "+8/+3"
+    fortitudeSave: 6
+    reflexSave: 2
+    willSave: 2
+  barbarian-9:
+    characterClass: "@barbarian"
+    level: 9
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 6
+    reflexSave: 3
+    willSave: 3
+  barbarian-10:
+    characterClass: "@barbarian"
+    level: 10
+    baseAttackBonus: "+10/+5"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 3
+  barbarian-11:
+    characterClass: "@barbarian"
+    level: 11
+    baseAttackBonus: "+11/+6/+1"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 3
+  barbarian-12:
+    characterClass: "@barbarian"
+    level: 12
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 4
+  barbarian-13:
+    characterClass: "@barbarian"
+    level: 13
+    baseAttackBonus: "+13/+8/+3"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 4
+  barbarian-14:
+    characterClass: "@barbarian"
+    level: 14
+    baseAttackBonus: "+14/+9/+4"
+    fortitudeSave: 9
+    reflexSave: 4
+    willSave: 4
+  barbarian-15:
+    characterClass: "@barbarian"
+    level: 15
+    baseAttackBonus: "+15/+10/+5"
+    fortitudeSave: 9
+    reflexSave: 5
+    willSave: 5
+  barbarian-16:
+    characterClass: "@barbarian"
+    level: 16
+    baseAttackBonus: "+16/+11/+6/+1"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 5
+  barbarian-17:
+    characterClass: "@barbarian"
+    level: 17
+    baseAttackBonus: "+17/+12/+7/+2"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 5
+  barbarian-18:
+    characterClass: "@barbarian"
+    level: 18
+    baseAttackBonus: "+18/+13/+8/+3"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 6
+  barbarian-19:
+    characterClass: "@barbarian"
+    level: 19
+    baseAttackBonus: "+19/+14/+9/+4"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 6
+  barbarian-20:
+    characterClass: "@barbarian"
+    level: 20
+    baseAttackBonus: "+20/+15/+10/+5"
+    fortitudeSave: 12
+    reflexSave: 6
+    willSave: 6
