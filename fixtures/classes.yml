@@ -71,3 +71,40 @@ App\Entity\CharacterClass:
       - "@profession"
       - "@sense-motive"
       - "@spellcraft"
+  druid:
+    name: Druid
+    slug: druid
+    hitDie: d8
+    alignment: Any neutral
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@climb"
+      - "@craft"
+      - "@fly"
+      - "@handle-animal"
+      - "@heal"
+      - "@knowledge-geography"
+      - "@knowledge-nature"
+      - "@perception"
+      - "@profession"
+      - "@ride"
+      - "@spellcraft"
+      - "@survival"
+      - "@swim"
+  fighter:
+    name: Fighter
+    slug: fighter
+    hitDie: d10
+    alignment: Any
+    skillRanksPerLevel: 2 + INT modifier
+    classSkills:
+      - "@climb"
+      - "@craft"
+      - "@handle-animal"
+      - "@intimidate"
+      - "@knowledge-dungeoneering"
+      - "@knowledge-engineering"
+      - "@profession"
+      - "@ride"
+      - "@survival"
+      - "@swim"

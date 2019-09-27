@@ -7,6 +7,7 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Domain\ValueObject\Markdown;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -15,7 +16,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  *     collectionOperations={"get"={"method"="GET"}},
  *     itemOperations={"get"={"method"="GET"}},
  *     normalizationContext={"groups"={"read"}},
- *     denormalizationContext={"groups"={"write"}}
+ *     denormalizationContext={"groups"={"write"}},
+ *     attributes={"order"={"name"}}
  * )
  * @ORM\Entity(repositoryClass="App\Repository\SpellRepository")
  */
@@ -43,12 +45,6 @@ class Spell
      * @ApiSubresource()
      */
     private $school;
-
-    /**
-     * @ORM\Column(type="text")
-     * @Groups("read")
-     */
-    private $description;
 
     /**
      * @ORM\Column(type="string", length=100)
@@ -82,7 +78,39 @@ class Spell
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
      */
-    private $Area;
+    private $area;
+
+    /**
+     * @var ?Markdown
+     */
+    private $descriptionObject;
+
+    public function getDescriptionObject(): ?Markdown
+    {
+        return $this->descriptionObject;
+    }
+
+    /**
+     * @Groups("read")
+     * @return ?array
+     */
+    public function getDescription(): ?array
+    {
+        if($this->descriptionObject === null)
+        {
+            return null;
+        }
+
+        return [
+            'markdown' => $this->descriptionObject->getMarkdown(),
+            'html' => $this->descriptionObject->getHTML(),
+        ];
+    }
+
+    public function setDescriptionObject(Markdown $descriptionObject)
+    {
+        $this->descriptionObject = $descriptionObject;
+    }
 
     public function getId(): ?int
     {
@@ -129,18 +157,6 @@ class Spell
     public function setSchool(?MagicSchool $school): self
     {
         $this->school = $school;
-
-        return $this;
-    }
-
-    public function getDescription(): ?string
-    {
-        return $this->description;
-    }
-
-    public function setDescription(string $description): self
-    {
-        $this->description = $description;
 
         return $this;
     }
@@ -207,12 +223,12 @@ class Spell
 
     public function getArea(): ?string
     {
-        return $this->Area;
+        return $this->area;
     }
 
-    public function setArea(?string $Area): self
+    public function setArea(?string $area): self
     {
-        $this->Area = $Area;
+        $this->area = $area;
 
         return $this;
     }
