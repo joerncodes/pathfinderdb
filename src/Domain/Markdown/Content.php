@@ -3,7 +3,6 @@
 namespace App\Domain\Markdown;
 
 use App\Domain\ValueObject\Markdown;
-use Spatie\YamlFrontMatter\YamlFrontMatter;
 
 class Content
 {
@@ -16,10 +15,9 @@ class Content
 
     public function fromFilename($fileName)
     {
-        $filePath = $this->contentPath . '/' . $fileName;
+        $filePath = $this->contentPath.'/'.$fileName;
 
-        if(!file_exists($filePath) || !is_readable($filePath))
-        {
+        if (!file_exists($filePath) || !is_readable($filePath)) {
             throw new Exception();
         }
 

@@ -92,12 +92,12 @@ class Spell
 
     /**
      * @Groups("read")
+     *
      * @return ?array
      */
     public function getDescription(): ?array
     {
-        if($this->descriptionObject === null)
-        {
+        if (null === $this->descriptionObject) {
             return null;
         }
 
@@ -118,7 +118,7 @@ class Spell
     }
 
     /**
-     * "Range" is reserved in MySQL
+     * "Range" is reserved in MySQL.
      *
      * @return string|null
      * @Groups("read")
@@ -142,6 +142,7 @@ class Spell
 
     /**
      * @Groups("read")
+     *
      * @return string|null
      */
     public function getSchoolName(): ?string

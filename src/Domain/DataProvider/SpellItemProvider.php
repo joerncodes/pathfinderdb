@@ -41,12 +41,11 @@ final class SpellItemProvider implements ItemDataProviderInterface, RestrictedDa
     {
         $spell = $this->repository->findOneBySlug($id);
 
-        try
-        {
+        try {
             $description = $this->getDescription($spell);
             $spell->setDescriptionObject($description);
+        } catch (Exception $e) {
         }
-        catch(Exception $e) { }
 
         return $spell;
     }
@@ -60,6 +59,6 @@ final class SpellItemProvider implements ItemDataProviderInterface, RestrictedDa
 
     public function supports(string $resourceClass, string $operationName = null, array $context = []): bool
     {
-        return $resourceClass === Spell::class;
+        return Spell::class === $resourceClass;
     }
 }
