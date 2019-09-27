@@ -4,3 +4,8 @@ App\Entity\Source:
     slug: core-rulebook
     copyright: "© 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams."
     link: https://www.amazon.de/dp/1601251505/ref=cm_sw_em_r_mt_dp_U_U.BJDbWTV3XNF
+  advanced-players-guide:
+    name: "Pathfinder Roleplaying Game: Advanced Player’s Guide"
+    slug: advanced-players-guide
+    copyright: "© 2010, Paizo Publishing, LLC; Author: Jason Bulmahn."
+    link: https://www.amazon.com/dp/1601252463/ref=cm_sw_em_r_mt_dp_U_2xCJDbEAC5CZ2

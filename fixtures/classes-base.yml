@@ -1,0 +1,22 @@
+App\Entity\CharacterClass:
+  alchemist:
+    name: Alchemist
+    slug: alchemist
+    hitDie: d8
+    alignment: Any
+    skillRanksPerLevel: 4 + INT modifier
+    classSkills:
+      - "@appraise"
+      - "@craft"
+      - "@disable-device"
+      - "@fly"
+      - "@heal"
+      - "@knowledge-arcana"
+      - "@knowledge-nature"
+      - "@perception"
+      - "@profession"
+      - "@sleight-of-hand"
+      - "@spellcraft"
+      - "@survival"
+      - "@use-magic-device"
+    source: "@advanced-players-guide"
