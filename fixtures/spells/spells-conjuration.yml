@@ -7,6 +7,7 @@ App\Entity\Spell:
     spellRange: touch
     target: creature touched
     subschool: Healing
+    components: [V,S]
     source: "@core-rulebook"
   mage-armor:
     name: Mage Armor
@@ -16,4 +17,5 @@ App\Entity\Spell:
     spellRange: touch
     subschool: Creation
     target: creature touched
+    components: [V,S,F (a piece of cured leather)]
     source: "@core-rulebook"

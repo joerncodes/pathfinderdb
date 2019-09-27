@@ -7,4 +7,5 @@ App\Entity\Spell:
     spellRange: long (400 ft. + 40 ft./level)
     subschool: Fire
     area: 20-ft.-radius spread
+    components: [V,S,'M (a ball of bat guano and sulfur)']
     source: "@core-rulebook"

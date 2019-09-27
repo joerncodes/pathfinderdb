@@ -69,6 +69,12 @@ class Spell extends ApiBase
      */
     private $spellClassLevels;
 
+    /**
+     * @ORM\Column(type="json_array")
+     * @Groups("read")
+     */
+    private $components = [];
+
     public function __construct()
     {
         $this->spellClassLevels = new ArrayCollection();
@@ -230,6 +236,18 @@ class Spell extends ApiBase
                 $spellClassLevel->setSpell(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getComponents(): ?array
+    {
+        return $this->components;
+    }
+
+    public function setComponents(array $components): self
+    {
+        $this->components = $components;
 
         return $this;
     }

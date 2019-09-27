@@ -6,6 +6,7 @@ App\Entity\Spell:
     castingTime: 1 standard action
     spellRange: personal
     target: you
+    components: [V,S,'F (a clear crystal or mineral prism)']
     source: "@core-rulebook"
   true-strike:
     name: True Strike
@@ -14,4 +15,5 @@ App\Entity\Spell:
     castingTime: 1 standard action
     spellRange: personal
     target: you
+    components: [V,'F (small wooden replica of an archery target)']
     source: "@core-rulebook"

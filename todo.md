@@ -3,6 +3,12 @@
 - [ ] domains for markdown content
 - [ ] fix sorting
 
+## Spells
+
+- [X] Components
+- [ ] cleric domains
+- [ ] domain spells
+
 ## Content
 
 - [ ] markdown import on fixture loading
