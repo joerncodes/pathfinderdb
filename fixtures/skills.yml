@@ -5,207 +5,242 @@ App\Entity\Skill:
     untrained: true
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   appraise:
     name: Appraise
     slug: appraise
     untrained: true
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   bluff:
     name: Bluff
     slug: bluff
     untrained: true
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   climb:
     name: Climb
     slug: climb
     untrained: true
     armorCheckPenalty: true
     ability: "@str"
+    source: "@core-rulebook"
   craft:
     name: Craft
     slug: craft
     untrained: true
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   diplomacy:
     name: Diplomacy
     slug: diploymacy
     untrained: yes
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   disable-device:
     name: Disable Device
     slug: disable-device
     untrained: false
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   disguise:
     name: Disguise
     slug: disguise
     untrained: true
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   escape-artist:
     name: Escape Artist
     slug: escape-artist
     untrained: true
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   fly:
     name: Fly
     slug: fly
     untrained: true
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   handle-animal:
     name: Handle Animal
     slug: handle-animal
     untrained: false
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   heal:
     name: Heal
     slug: heal
     untrained: true
     armorCheckPenalty: false
     ability: "@wis"
+    source: "@core-rulebook"
   intimidate:
     name: Intimidate
     slug: intimidate
     untrained: true
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   knowledge-arcana:
     name: Knowledge (Arcana)
     slug: knowledge-arcana
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-dungeoneering:
     name: Knowledge (Dungeoneering)
     slug: knowledge-dungeoneering
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-engineering:
     name: Knowledge (Engineering)
     slug: knowledge-engineering
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-geography:
     name: Knowledge (Geography)
     slug: knowledge-geography
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-history:
     name: Knowledge (History)
     slug: knowledge-history
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-local:
     name: Knowledge (Local)
     slug: knowledge-local
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-nature:
     name: Knowledge (Nature)
     slug: knowledge-nature
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-nobility:
     name: Knowledge (Nobility)
     slug: knowledge-nobility
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-planes:
     name: Knowledge (Planes)
     slug: knowledge-planes
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   knowledge-religion:
     name: Knowledge (Religion)
     slug: knowledge-religion
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   linguistics:
     name: Linguistics
     slug: linguistics
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   perception:
     name: Perception
     slug: perception
     untrained: true
     armorCheckPenalty: false
     ability: "@wis"
+    source: "@core-rulebook"
   perform:
     name: Perform
     slug: perform
     untrained: true
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"
   profession:
     name: Profession
     slug: profession
     untrained: false
     armorCheckPenalty: false
     ability: "@wis"
+    source: "@core-rulebook"
   ride:
     name: Ride
     slug: ride
     untrained: true
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   sense-motive:
     name: Sense Motive
     slug: sense-motive
     untrained: true
     armorCheckPenalty: false
     ability: "@wis"
+    source: "@core-rulebook"
   sleight-of-hand:
     name: Sleight of Hand
     slug: sleight-of-hand
     untrained: false
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   spellcraft:
     name: Spellcraft
     slug: spellcraft
     untrained: false
     armorCheckPenalty: false
     ability: "@int"
+    source: "@core-rulebook"
   stealth:
     name: Stealth
     slug: stealth
     untrained: true
     armorCheckPenalty: true
     ability: "@dex"
+    source: "@core-rulebook"
   survival:
     name: Survival
     slug: survival
     untrained: true
     armorCheckPenalty: false
     ability: "@wis"
+    source: "@core-rulebook"
   swim:
     name: Swim
     slug: swim
     untrained: true
     armorCheckPenalty: true
     ability: "@str"
+    source: "@core-rulebook"
   use-magic-device:
     name: Use Magic Device
     slug: use-magic-device
     untrained: false
     armorCheckPenalty: false
     ability: "@cha"
+    source: "@core-rulebook"

@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Entity\Traits\HasSourceTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
@@ -21,6 +22,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class CharacterClass extends ApiBase
 {
+    use HasSourceTrait;
+
     /**
      * @ORM\Column(type="string", length=10)
      * @Groups("read")

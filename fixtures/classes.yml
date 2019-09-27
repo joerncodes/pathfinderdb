@@ -16,6 +16,7 @@ App\Entity\CharacterClass:
       - "@ride"
       - "@survival"
       - "@swim"
+    source: "@core-rulebook"
   bard:
     name: Bard
     slug: bard
@@ -51,6 +52,7 @@ App\Entity\CharacterClass:
       - "@spellcraft"
       - "@stealth"
       - "@use-magic-device"
+    source: "@core-rulebook"
   cleric:
     name: Cleric
     slug: cleric
@@ -71,6 +73,7 @@ App\Entity\CharacterClass:
       - "@profession"
       - "@sense-motive"
       - "@spellcraft"
+    source: "@core-rulebook"
   druid:
     name: Druid
     slug: druid
@@ -91,6 +94,7 @@ App\Entity\CharacterClass:
       - "@spellcraft"
       - "@survival"
       - "@swim"
+    source: "@core-rulebook"
   fighter:
     name: Fighter
     slug: fighter
@@ -108,3 +112,4 @@ App\Entity\CharacterClass:
       - "@ride"
       - "@survival"
       - "@swim"
+    source: "@core-rulebook"

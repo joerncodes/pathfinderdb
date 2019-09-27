@@ -8,6 +8,7 @@ use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Domain\ValueObject\Markdown;
+use App\Entity\Traits\HasSourceTrait;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -23,11 +24,12 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class Spell extends ApiBase
 {
+    use HasSourceTrait;
+
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\MagicSchool", inversedBy="spells")
      * @Groups("read")
      * @ORM\JoinColumn(nullable=false)
-     * @ApiSubresource()
      */
     private $school;
 
@@ -103,15 +105,8 @@ class Spell extends ApiBase
     }
 
     /**
-     * @Groups("read")
-     *
-     * @return string|null
+     * @return MagicSchool|null
      */
-    public function getSchoolName(): ?string
-    {
-        return $this->school->getName() ?? null;
-    }
-
     public function getSchool(): ?MagicSchool
     {
         return $this->school;

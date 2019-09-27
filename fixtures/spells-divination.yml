@@ -6,6 +6,7 @@ App\Entity\Spell:
     castingTime: 1 standard action
     spellRange: personal
     target: you
+    source: "@core-rulebook"
   true-strike:
     name: True Strike
     slug: true-strike
@@ -13,3 +14,4 @@ App\Entity\Spell:
     castingTime: 1 standard action
     spellRange: personal
     target: you
+    source: "@core-rulebook"

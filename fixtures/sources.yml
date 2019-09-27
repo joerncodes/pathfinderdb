@@ -1,0 +1,6 @@
+App\Entity\Source:
+  core-rulebook:
+    name: Pathfinder Roleplaying Game Core Rulebook
+    slug: core-rulebook
+    copyright: "© 2009, Paizo Publishing, LLC; Author: Jason Bulmahn, based on material by Jonathan Tweet, Monte Cook, and Skip Williams."
+    link: https://www.amazon.de/dp/1601251505/ref=cm_sw_em_r_mt_dp_U_U.BJDbWTV3XNF

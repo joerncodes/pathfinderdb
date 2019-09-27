@@ -7,3 +7,4 @@ App\Entity\Spell:
     spellRange: touch
     subschool: Creation
     target: creature touched
+    source: "@core-rulebook"

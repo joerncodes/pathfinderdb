@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
+use App\Entity\Traits\HasSourceTrait;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -18,6 +19,8 @@ use Symfony\Component\Serializer\Annotation\Groups;
  */
 class Skill extends ApiBase
 {
+    use HasSourceTrait;
+
     /**
      * @ORM\Column(type="boolean")
      * @Groups("read")
