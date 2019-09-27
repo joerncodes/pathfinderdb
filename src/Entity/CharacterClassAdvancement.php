@@ -3,6 +3,9 @@
 namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\Annotation\ApiSubresource;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -61,6 +64,17 @@ class CharacterClassAdvancement
      * @Groups("read")
      */
     private $level;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\CharacterClassFeature")
+     * @Groups("read")
+     */
+    private $feature;
+
+    public function __construct()
+    {
+        $this->feature = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -135,6 +149,32 @@ class CharacterClassAdvancement
     public function setLevel(int $level): self
     {
         $this->level = $level;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|CharacterClassFeature[]
+     */
+    public function getFeature(): Collection
+    {
+        return $this->feature;
+    }
+
+    public function addFeature(CharacterClassFeature $feature): self
+    {
+        if (!$this->feature->contains($feature)) {
+            $this->feature[] = $feature;
+        }
+
+        return $this;
+    }
+
+    public function removeFeature(CharacterClassFeature $feature): self
+    {
+        if ($this->feature->contains($feature)) {
+            $this->feature->removeElement($feature);
+        }
 
         return $this;
     }

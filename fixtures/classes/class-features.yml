@@ -1,0 +1,36 @@
+App\Entity\CharacterClassFeature:
+  barbarian-fast-movement:
+    name: Fast Movement
+    slug: barbarian-fast-movement
+    featureType: Ex
+    description: <markdown(features/barbarian-fast-movement.md)>
+  barbarian-rage:
+    name: Rage
+    slug: barbarian-rage
+    featureType: Ex
+    description: <markdown(features/barbarian-rage.md)>
+  barbarian-rage-powers:
+    name: Rage Powers
+    slug: barbarian-rage-powers
+    featureType: Ex
+    description: <markdown(features/barbarian-rage-powers.md)>
+  barbarian-uncanny-dodge:
+    name: Uncanny Dodge
+    slug: barbarian-uncanny-dodge
+    featureType: Ex
+    description: <markdown(features/barbarian-uncanny-dodge.md)>
+  barbarian-trap-sense:
+    name: Trap Sense
+    slug: barbarian-trap-sense
+    featureType: Ex
+    description: <markdown(features/barbarian-trap-sense.md)>
+  barbarian-improved-uncanny-dodge:
+    name: Improved Uncanny Dodge
+    slug: barbarian-improved-uncanny-dodge
+    featureType: Ex
+    description: <markdown(features/barbarian-improved-uncanny-dodge.md)>
+  barbarian-damage-reduction:
+    name: Damage Reduction
+    slug: barbarian-damage-reduction
+    featureType: Ex
+    description: <markdown(features/barbarian-damage-reduction.md)>
