@@ -47,9 +47,15 @@ class CharacterClass extends ApiBase
      */
     private $skillRanksPerLevel;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\SpellClassLevel", mappedBy="characterClass")
+     */
+    private $spellClassLevels;
+
     public function __construct()
     {
         $this->classSkills = new ArrayCollection();
+        $this->spellClassLevels = new ArrayCollection();
     }
 
 
@@ -123,6 +129,37 @@ class CharacterClass extends ApiBase
     public function setSkillRanksPerLevel(string $skillRanksPerLevel): self
     {
         $this->skillRanksPerLevel = $skillRanksPerLevel;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|SpellClassLevel[]
+     */
+    public function getSpellClassLevels(): Collection
+    {
+        return $this->spellClassLevels;
+    }
+
+    public function addSpellClassLevel(SpellClassLevel $spellClassLevel): self
+    {
+        if (!$this->spellClassLevels->contains($spellClassLevel)) {
+            $this->spellClassLevels[] = $spellClassLevel;
+            $spellClassLevel->setCharacterClass($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSpellClassLevel(SpellClassLevel $spellClassLevel): self
+    {
+        if ($this->spellClassLevels->contains($spellClassLevel)) {
+            $this->spellClassLevels->removeElement($spellClassLevel);
+            // set the owning side to null (unless already changed)
+            if ($spellClassLevel->getCharacterClass() === $this) {
+                $spellClassLevel->setCharacterClass(null);
+            }
+        }
 
         return $this;
     }

@@ -9,6 +9,8 @@ use ApiPlatform\Core\Annotation\ApiProperty;
 use ApiPlatform\Core\Annotation\ApiResource;
 use App\Domain\ValueObject\Markdown;
 use App\Entity\Traits\HasSourceTrait;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Serializer\Annotation\Groups;
 
@@ -65,6 +67,16 @@ class Spell extends ApiBase
      * @var ?Markdown
      */
     private $descriptionObject;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\SpellClassLevel", mappedBy="spell")
+     */
+    private $spellClassLevels;
+
+    public function __construct()
+    {
+        $this->spellClassLevels = new ArrayCollection();
+    }
 
     public function getDescriptionObject(): ?Markdown
     {
@@ -175,6 +187,53 @@ class Spell extends ApiBase
     public function setArea(?string $area): self
     {
         $this->area = $area;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|SpellClassLevel[]
+     */
+    public function getSpellClassLevels(): Collection
+    {
+        return $this->spellClassLevels;
+    }
+
+    /**
+     * @Groups("read")
+     * @return array
+     */
+    public function getLevels(): array
+    {
+        $result = [];
+        foreach($this->spellClassLevels as $spellClassLevel)
+        {
+            $result[] =
+                $spellClassLevel->getCharacterClass()->getName() . ' ' . $spellClassLevel->getLevel();
+        }
+
+        return $result;
+    }
+
+    public function addSpellClassLevel(SpellClassLevel $spellClassLevel): self
+    {
+        if (!$this->spellClassLevels->contains($spellClassLevel)) {
+            $this->spellClassLevels[] = $spellClassLevel;
+            $spellClassLevel->setSpell($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSpellClassLevel(SpellClassLevel $spellClassLevel): self
+    {
+        if ($this->spellClassLevels->contains($spellClassLevel)) {
+            $this->spellClassLevels->removeElement($spellClassLevel);
+            // set the owning side to null (unless already changed)
+            if ($spellClassLevel->getSpell() === $this) {
+                $spellClassLevel->setSpell(null);
+            }
+        }
 
         return $this;
     }

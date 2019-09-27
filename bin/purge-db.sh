@@ -1,0 +1,1 @@
+docker-compose run php-fpm bin/console doctrine:schema:drop --force && docker-compose run php-fpm bin/console doctrine:schema:update --force && yes | docker-compose run php-fpm bin/console hautelook:fixtures:load

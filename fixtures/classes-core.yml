@@ -113,3 +113,21 @@ App\Entity\CharacterClass:
       - "@survival"
       - "@swim"
     source: "@core-rulebook"
+  paladin:
+    name: Paladin
+    slug: paladin
+    hitDie: d10
+    alignment: Lawful good
+    skillRanksPerLevel: 2 + INT modified
+    classSkills:
+      - "@craft"
+      - "@diplomacy"
+      - "@handle-animal"
+      - "@heal"
+      - "@knowledge-nobility"
+      - "@knowledge-religion"
+      - "@profession"
+      - "@ride"
+      - "@sense-motive"
+      - "@spellcraft"
+    source: "@core-rulebook"

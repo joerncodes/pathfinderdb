@@ -1,4 +1,13 @@
 App\Entity\Spell:
+  cure-light-wounds:
+    name: Cure Light Wounds
+    slug: cure-light-wounds
+    school: "@conj"
+    castingTime: 1 standard action
+    spellRange: touch
+    target: creature touched
+    subschool: Healing
+    source: "@core-rulebook"
   mage-armor:
     name: Mage Armor
     slug: mage-armor
