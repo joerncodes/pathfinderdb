@@ -60,11 +60,6 @@ class Spell extends ApiBase
     private $area;
 
     /**
-     * @var ?Markdown
-     */
-    private $descriptionObject;
-
-    /**
      * @ORM\OneToMany(targetEntity="App\Entity\SpellClassLevel", mappedBy="spell")
      */
     private $spellClassLevels;
@@ -75,36 +70,20 @@ class Spell extends ApiBase
      */
     private $components = [];
 
+    /**
+     * @ORM\Column(type="text")
+     * @Groups("read")
+     */
+    private $description;
+
     public function __construct()
     {
         $this->spellClassLevels = new ArrayCollection();
     }
 
-    public function getDescriptionObject(): ?Markdown
+    public function getDescription(): ?string
     {
-        return $this->descriptionObject;
-    }
-
-    /**
-     * @Groups("read")
-     *
-     * @return ?array
-     */
-    public function getDescription(): ?array
-    {
-        if (null === $this->descriptionObject) {
-            return null;
-        }
-
-        return [
-            'markdown' => $this->descriptionObject->getMarkdown(),
-            'html' => $this->descriptionObject->getHTML(),
-        ];
-    }
-
-    public function setDescriptionObject(Markdown $descriptionObject)
-    {
-        $this->descriptionObject = $descriptionObject;
+        return $this->description;
     }
 
     /**
@@ -248,6 +227,13 @@ class Spell extends ApiBase
     public function setComponents(array $components): self
     {
         $this->components = $components;
+
+        return $this;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
 
         return $this;
     }

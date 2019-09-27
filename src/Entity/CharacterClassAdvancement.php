@@ -11,7 +11,10 @@ use Symfony\Component\Serializer\Annotation\Groups;
  * @ApiResource(
  *     collectionOperations={"get"={"method"="GET"}},
  *     itemOperations={"get"={"method"="GET"}},
- *     shortName="advancement"
+ *     shortName="advancement",
+ *     attributes={
+ *      "order"={"level":"ASC"},
+ *     }
  * )
  */
 class CharacterClassAdvancement

@@ -8,6 +8,7 @@ App\Entity\Spell:
     target: creature touched
     subschool: Healing
     components: [V,S]
+    description: <markdown(spells/cure-light-wounds.md)>
     source: "@core-rulebook"
   mage-armor:
     name: Mage Armor
@@ -18,4 +19,5 @@ App\Entity\Spell:
     subschool: Creation
     target: creature touched
     components: [V,S,F (a piece of cured leather)]
+    description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"

@@ -7,6 +7,7 @@ App\Entity\Spell:
     spellRange: personal
     target: you
     components: [V,S,'F (a clear crystal or mineral prism)']
+    description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"
   true-strike:
     name: True Strike
@@ -16,4 +17,5 @@ App\Entity\Spell:
     spellRange: personal
     target: you
     components: [V,'F (small wooden replica of an archery target)']
+    description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"

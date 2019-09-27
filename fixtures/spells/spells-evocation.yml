@@ -8,4 +8,5 @@ App\Entity\Spell:
     subschool: Fire
     area: 20-ft.-radius spread
     components: [V,S,'M (a ball of bat guano and sulfur)']
+    description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"

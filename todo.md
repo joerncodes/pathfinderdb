@@ -1,5 +1,5 @@
-- [ ] Class specials for class advancements
-- [ ] spells/day for class advancements
+- [ ] Class features for class advancements
+- [ ] spells/day for class advancements (array)
 - [ ] domains for markdown content
 - [ ] fix sorting
 
