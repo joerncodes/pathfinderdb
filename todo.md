@@ -1,7 +1,7 @@
 - [ ] Class features for class advancements
 - [ ] spells/day for class advancements (array)
-- [ ] fix sorting
 - [ ] conditions
+- [X] fix sorting
 - [X] domains for markdown content
 
 ## Spells
