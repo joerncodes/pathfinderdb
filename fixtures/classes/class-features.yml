@@ -1,56 +1,61 @@
 App\Entity\CharacterClassFeature:
+  barbarian-weapon-and-armor-proficiency:
+    name: Weapon and Armor Proficiency
+    slug: barbarian-weapon-and-armor-proficiency
+    featureType: null
+    description: <markdown(features/barbarian/weapon-and-armor-proficiency.md)>
   barbarian-fast-movement:
     name: Fast Movement
     slug: barbarian-fast-movement
     featureType: Ex
-    description: <markdown(features/barbarian-fast-movement.md)>
+    description: <markdown(features/barbarian/fast-movement.md)>
   barbarian-rage:
     name: Rage
     slug: barbarian-rage
     featureType: Ex
-    description: <markdown(features/barbarian-rage.md)>
+    description: <markdown(features/barbarian/rage.md)>
   barbarian-rage-power:
     name: Rage Powers
     slug: barbarian-rage-power
     featureType: Ex
-    description: <markdown(features/barbarian-rage-power.md)>
+    description: <markdown(features/barbarian/rage-power.md)>
   barbarian-uncanny-dodge:
     name: Uncanny Dodge
     slug: barbarian-uncanny-dodge
     featureType: Ex
-    description: <markdown(features/barbarian-uncanny-dodge.md)>
+    description: <markdown(features/barbarian/uncanny-dodge.md)>
   barbarian-trap-sense:
     name: Trap Sense
     slug: barbarian-trap-sense
     featureType: Ex
-    description: <markdown(features/barbarian-trap-sense.md)>
+    description: <markdown(features/barbarian/trap-sense.md)>
   barbarian-improved-uncanny-dodge:
     name: Improved Uncanny Dodge
     slug: barbarian-improved-uncanny-dodge
     featureType: Ex
-    description: <markdown(features/barbarian-improved-uncanny-dodge.md)>
+    description: <markdown(features/barbarian/improved-uncanny-dodge.md)>
   barbarian-damage-reduction:
     name: Damage Reduction
     slug: barbarian-damage-reduction
     featureType: Ex
-    description: <markdown(features/barbarian-damage-reduction.md)>
+    description: <markdown(features/barbarian/damage-reduction.md)>
   barbarian-greater-rage:
     name: Greater Rage
     slug: barbarian-greater-rage
     featureType: Ex
-    description: <markdown(features/barbarian-greater-rage.md)>
+    description: <markdown(features/barbarian/greater-rage.md)>
   barbarian-indomitable-will:
     name: Indomitable Will
     slug: barbarian-indomitable-will
     featureType: Ex
-    description: <markdown(features/barbarian-indomitable-will.md)>
+    description: <markdown(features/barbarian/indomitable-will.md)>
   barbarian-tireless-rage:
     name: Tireless Rage
     slug: barbarian-tireless-rage
     featureType: Ex
-    description: <markdown(features/barbarian-tireless-rage.md)>
+    description: <markdown(features/barbarian/tireless-rage.md)>
   barbarian-mighty-rage:
     name: Mighty Rage
     slug: barbarian-mighty-rage
     featureType: Ex
-    description: <markdown(features/barbarian-tireless-rage.md)>
+    description: <markdown(features/barbarian/tireless-rage.md)>

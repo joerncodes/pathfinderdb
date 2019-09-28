@@ -6,7 +6,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 2
     reflexSave: 0
     willSave: 0
-    feature: ["@barbarian-fast-movement", "@barbarian-rage"]
+    feature: ["@barbarian-weapon-and-armor-proficiency","@barbarian-fast-movement", "@barbarian-rage"]
   barbarian-2:
     characterClass: "@barbarian"
     level: 2
