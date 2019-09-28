@@ -5,6 +5,7 @@ App\Entity\CharacterClass:
     hitDie: d12
     alignment: Any non-lawful
     skillRanksPerLevel: 4 + INT modifier
+    startingWealth: 3d6 × 10 gp (average 105gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@acrobatics"
       - "@climb"
@@ -23,6 +24,7 @@ App\Entity\CharacterClass:
     hitDie: d8
     alignment: Any
     skillRanksPerLevel: 6 + INT modifier
+    startingWealth: 3d6 × 10 gp (average 105 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@acrobatics"
       - "@appraise"
@@ -59,6 +61,7 @@ App\Entity\CharacterClass:
     hitDie: d8
     alignment: A cleric's alignment must be within one step of her deity's, along either the law/chaos axis or the good/evil axis.
     skillRanksPerLevel: 2 + INT modifier
+    startingWealth: 4d6 × 10 gp (average 140 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@appraise"
       - "@craft"
@@ -80,6 +83,7 @@ App\Entity\CharacterClass:
     hitDie: d8
     alignment: Any neutral
     skillRanksPerLevel: 4 + INT modifier
+    startingWealth: 2d6 × 10 gp (average 70 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@climb"
       - "@craft"
@@ -101,6 +105,7 @@ App\Entity\CharacterClass:
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 2 + INT modifier
+    startingWealth: 5d6 x 10 gp (average 175 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@climb"
       - "@craft"
@@ -119,6 +124,7 @@ App\Entity\CharacterClass:
     hitDie: d10
     alignment: Lawful good
     skillRanksPerLevel: 2 + INT modified
+    startingWealth: 5d6 × 10 gp (average 175 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@craft"
       - "@diplomacy"
@@ -137,6 +143,7 @@ App\Entity\CharacterClass:
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 6 + INT modified
+    startingWealth: 5d6 × 10 gp (average 175 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@climb"
       - "@craft"
@@ -160,6 +167,7 @@ App\Entity\CharacterClass:
     hitDie: d6
     alignment: Any
     skillRanksPerLevel: 2 + INT modified
+    startingWealth: 2d6 × 10 gp (average 70 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@appraise"
       - "@bluff"
@@ -177,6 +185,7 @@ App\Entity\CharacterClass:
     hitDie: d6
     alignment: Any
     skillRanksPerLevel: 2 + INT modified
+    startingWealth: 2d6 × 10 gp (average 70 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@appraise"
       - "@craft"

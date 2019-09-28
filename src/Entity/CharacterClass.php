@@ -57,6 +57,11 @@ class CharacterClass extends ApiBase
      */
     private $advancement;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $startingWealth;
+
     public function __construct()
     {
         $this->classSkills = new ArrayCollection();
@@ -195,6 +200,18 @@ class CharacterClass extends ApiBase
                 $advancement->setCharacterClass(null);
             }
         }
+
+        return $this;
+    }
+
+    public function getStartingWealth(): ?string
+    {
+        return $this->startingWealth;
+    }
+
+    public function setStartingWealth(string $startingWealth): self
+    {
+        $this->startingWealth = $startingWealth;
 
         return $this;
     }
