@@ -9,11 +9,11 @@ App\Entity\CharacterClassFeature:
     slug: barbarian-rage
     featureType: Ex
     description: <markdown(features/barbarian-rage.md)>
-  barbarian-rage-powers:
+  barbarian-rage-power:
     name: Rage Powers
-    slug: barbarian-rage-powers
+    slug: barbarian-rage-power
     featureType: Ex
-    description: <markdown(features/barbarian-rage-powers.md)>
+    description: <markdown(features/barbarian-rage-power.md)>
   barbarian-uncanny-dodge:
     name: Uncanny Dodge
     slug: barbarian-uncanny-dodge
@@ -34,3 +34,23 @@ App\Entity\CharacterClassFeature:
     slug: barbarian-damage-reduction
     featureType: Ex
     description: <markdown(features/barbarian-damage-reduction.md)>
+  barbarian-greater-rage:
+    name: Greater Rage
+    slug: barbarian-greater-rage
+    featureType: Ex
+    description: <markdown(features/barbarian-greater-rage.md)>
+  barbarian-indomitable-will:
+    name: Indomitable Will
+    slug: barbarian-indomitable-will
+    featureType: Ex
+    description: <markdown(features/barbarian-indomitable-will.md)>
+  barbarian-tireless-rage:
+    name: Tireless Rage
+    slug: barbarian-tireless-rage
+    featureType: Ex
+    description: <markdown(features/barbarian-tireless-rage.md)>
+  barbarian-mighty-rage:
+    name: Mighty Rage
+    slug: barbarian-mighty-rage
+    featureType: Ex
+    description: <markdown(features/barbarian-tireless-rage.md)>

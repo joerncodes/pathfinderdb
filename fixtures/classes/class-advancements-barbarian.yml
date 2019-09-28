@@ -14,7 +14,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 3
     reflexSave: 0
     willSave: 0
-    feature: ["@barbarian-rage-powers","@barbarian-uncanny-dodge"]
+    feature: ["@barbarian-rage-power","@barbarian-uncanny-dodge"]
   barbarian-3:
     characterClass: "@barbarian"
     level: 3
@@ -30,7 +30,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 4
     reflexSave: 1
     willSave: 1
-    feature: ["@barbarian-rage-powers"]
+    feature: ["@barbarian-rage-power"]
   barbarian-5:
     characterClass: "@barbarian"
     level: 5
@@ -46,7 +46,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 5
     reflexSave: 2
     willSave: 2
-    feature: ["@barbarian-rage-powers","@barbarian-trap-sense"]
+    feature: ["@barbarian-rage-power","@barbarian-trap-sense"]
   barbarian-7:
     characterClass: "@barbarian"
     level: 7
@@ -62,6 +62,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 6
     reflexSave: 2
     willSave: 2
+    feature: ["@barbarian-rage-power"]
   barbarian-9:
     characterClass: "@barbarian"
     level: 9
@@ -69,6 +70,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 6
     reflexSave: 3
     willSave: 3
+    feature: ["@barbarian-trap-sense"]
   barbarian-10:
     characterClass: "@barbarian"
     level: 10
@@ -76,6 +78,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 7
     reflexSave: 3
     willSave: 3
+    feature: ["@barbarian-damage-reduction","@barbarian-rage-power"]
   barbarian-11:
     characterClass: "@barbarian"
     level: 11
@@ -83,6 +86,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 7
     reflexSave: 3
     willSave: 3
+    feature: ["@barbarian-greater-rage"]
   barbarian-12:
     characterClass: "@barbarian"
     level: 12
@@ -90,6 +94,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 8
     reflexSave: 4
     willSave: 4
+    feature: ["@barbarian-rage-power","@barbarian-trap-sense"]
   barbarian-13:
     characterClass: "@barbarian"
     level: 13
@@ -97,6 +102,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 8
     reflexSave: 4
     willSave: 4
+    feature: ["@barbarian-damage-reduction"]
   barbarian-14:
     characterClass: "@barbarian"
     level: 14
@@ -104,6 +110,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 9
     reflexSave: 4
     willSave: 4
+    feature: ["@barbarian-indomitable-will","@barbarian-rage-power"]
   barbarian-15:
     characterClass: "@barbarian"
     level: 15
@@ -111,6 +118,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 9
     reflexSave: 5
     willSave: 5
+    feature: ["@barbarian-trap-sense"]
   barbarian-16:
     characterClass: "@barbarian"
     level: 16
@@ -118,6 +126,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 10
     reflexSave: 5
     willSave: 5
+    feature: ["@barbarian-damage-reduction", "@barbarian-rage-power"]
   barbarian-17:
     characterClass: "@barbarian"
     level: 17
@@ -125,6 +134,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 10
     reflexSave: 5
     willSave: 5
+    feature: ["@barbarian-tireless-rage"]
   barbarian-18:
     characterClass: "@barbarian"
     level: 18
@@ -132,6 +142,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 11
     reflexSave: 6
     willSave: 6
+    feature: ["@barbarian-rage-power","@barbarian-trap-sense"]
   barbarian-19:
     characterClass: "@barbarian"
     level: 19
@@ -139,6 +150,7 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 11
     reflexSave: 6
     willSave: 6
+    feature: ["@barbarian-damage-reduction"]
   barbarian-20:
     characterClass: "@barbarian"
     level: 20
@@ -146,3 +158,4 @@ App\Entity\CharacterClassAdvancement:
     fortitudeSave: 12
     reflexSave: 6
     willSave: 6
+    feature: ["@barbarian-mighty-rage","@barbarian-rage-power"]
