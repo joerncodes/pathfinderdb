@@ -9,10 +9,10 @@ use DiceCalc\Calc;
 /**
  * @ApiResource(
  *     itemOperations={
- *          "get"
+ *          "get"={"path"="dice/{id}.{_format}"}
  *     },
  *     collectionOperations={
- *          "get"
+ *          "get"={"path"="dice.{_format}"}
  *     }
  * )
  */
