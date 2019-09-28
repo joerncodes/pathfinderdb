@@ -59,6 +59,7 @@ class CharacterClass extends ApiBase
 
     /**
      * @ORM\Column(type="string", length=255)
+     * @Groups("read")
      */
     private $startingWealth;
 

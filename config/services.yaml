@@ -11,6 +11,11 @@ services:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
 
+    _instanceof:
+        App\Domain\PropertySorting\SorterInterface:
+            tags:
+                - { name: property.sorter }
+
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name
     App\:
@@ -28,3 +33,6 @@ services:
     App\Domain\Markdown\Content:
         arguments:
             $contentPath: '%kernel.project_dir%/content'
+
+    App\Domain\PropertySorting\PropertySorter:
+        arguments: [!tagged property.sorter ]

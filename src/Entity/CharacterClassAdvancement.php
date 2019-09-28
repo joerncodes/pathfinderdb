@@ -75,6 +75,15 @@ class CharacterClassAdvancement
         $this->feature = new ArrayCollection();
     }
 
+    /**
+     * @Groups("read")
+     * @return string
+     */
+    public function getType(): string
+    {
+        return 'characterclassadvancement';
+    }
+
     public function getId(): ?int
     {
         return $this->id;

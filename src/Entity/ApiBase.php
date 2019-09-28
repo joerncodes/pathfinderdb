@@ -28,6 +28,16 @@ abstract class ApiBase
      */
     protected $slug;
 
+    /**
+     * @ApiProperty()
+     * @Groups("read")
+     */
+    public function getType()
+    {
+        $ref = new \ReflectionClass($this);
+        return strtolower($ref->getShortName());
+    }
+
     public function getId(): ?int
     {
         return $this->id;
