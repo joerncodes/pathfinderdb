@@ -28,7 +28,12 @@ class SerializeEventSubscriber implements EventSubscriberInterface
 
     public function sortParams(ViewEvent $event)
     {
-        $object = json_decode($event->getControllerResult());
+        if(
+            (!$object = json_decode($event->getControllerResult()))
+            || !is_object($object)
+        ) {
+            return $event;
+        }
         $object = $this->propertySorter->sort($object);
         return $event->setControllerResult(json_encode($object));
     }

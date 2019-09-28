@@ -9,6 +9,7 @@
         "doctrine/doctrine-migrations-bundle": "^2.0",
         "doctrine/orm": "^2.6",
         "erusev/parsedown": "^1.7",
+        "sergej-kurakin/diceroller": "^2.0",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
         "symfony/flex": "^1.3.1",

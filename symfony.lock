@@ -239,6 +239,9 @@
     "sebastian/recursion-context": {
         "version": "3.0.0"
     },
+    "sergej-kurakin/diceroller": {
+        "version": "2.0.0"
+    },
     "symfony/asset": {
         "version": "v4.3.4"
     },

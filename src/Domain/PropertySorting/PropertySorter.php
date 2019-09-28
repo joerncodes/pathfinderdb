@@ -20,7 +20,7 @@ final class PropertySorter
             if (!$sorter instanceof SorterInterface) {
                 throw new \InvalidArgumentException('Only instances of SorterInterface allowed.');
             }
-            if ($sorter->getType() === $object->type) {
+            if (isset($object->type) && $sorter->getType() === $object->type) {
                 return $sorter->sort($object);
             }
         }
