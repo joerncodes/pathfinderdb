@@ -21,6 +21,7 @@ final class MarkdownFakerProvider extends BaseProvider
     public function markdown($filename)
     {
         $content = $this->mdContent->fromFilename($filename);
+
         return $content->getHTML();
     }
 }
