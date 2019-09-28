@@ -5,9 +5,9 @@ namespace App\Domain\DataProvider;
 use ApiPlatform\Core\DataProvider\CollectionDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use ApiPlatform\Core\Exception\ResourceClassNotSupportedException;
-use App\Entity\Roll;
+use App\Entity\Dice;
 
-final class RollCollectionProvider implements CollectionDataProviderInterface, RestrictedDataProviderInterface
+final class DiceCollectionProvider implements CollectionDataProviderInterface, RestrictedDataProviderInterface
 {
     /**
      * Retrieves a collection.
@@ -18,15 +18,15 @@ final class RollCollectionProvider implements CollectionDataProviderInterface, R
      */
     public function getCollection(string $resourceClass, string $operationName = null)
     {
-        yield new Roll('d4');
-        yield new Roll('d6');
-        yield new Roll('d8');
-        yield new Roll('d12');
-        yield new Roll('d20');
+        yield new Dice('d4');
+        yield new Dice('d6');
+        yield new Dice('d8');
+        yield new Dice('d12');
+        yield new Dice('d20');
     }
 
     public function supports(string $resourceClass, string $operationName = null, array $context = []): bool
     {
-        return $resourceClass === Roll::class;
+        return $resourceClass === Dice::class;
     }
 }

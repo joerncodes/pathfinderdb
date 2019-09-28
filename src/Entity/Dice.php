@@ -16,7 +16,7 @@ use DiceCalc\Calc;
  *     }
  * )
  */
-class Roll
+class Dice
 {
     /**
      * @ApiProperty(identifier=true)

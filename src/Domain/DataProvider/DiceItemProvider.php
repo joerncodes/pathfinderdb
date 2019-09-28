@@ -5,9 +5,9 @@ namespace App\Domain\DataProvider;
 use ApiPlatform\Core\DataProvider\ItemDataProviderInterface;
 use ApiPlatform\Core\DataProvider\RestrictedDataProviderInterface;
 use ApiPlatform\Core\Exception\ResourceClassNotSupportedException;
-use App\Entity\Roll;
+use App\Entity\Dice;
 
-class RollItemProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
+class DiceItemProvider implements ItemDataProviderInterface, RestrictedDataProviderInterface
 {
     /**
      * Retrieves an item.
@@ -18,13 +18,13 @@ class RollItemProvider implements ItemDataProviderInterface, RestrictedDataProvi
      *
      * @return object|null
      */
-    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): Roll
+    public function getItem(string $resourceClass, $id, string $operationName = null, array $context = []): Dice
     {
-        return new Roll($id);
+        return new Dice($id);
     }
 
     public function supports(string $resourceClass, string $operationName = null, array $context = []): bool
     {
-        return $resourceClass === Roll::class;
+        return $resourceClass === Dice::class;
     }
 }
