@@ -12,6 +12,7 @@ parameters:
     notice: '%projectname% was coded by a single guy. If you find it helpful, please consider donating a buck or two!'
     support:
       paypal: '%paypallink%'
+    paizo: "Paizo Inc., Paizo, the Paizo golem logo, Pathfinder, the Pathfinder logo, Pathfinder Society, Starfinder, the Starfinder logo, GameMastery, and Planet Stories are registered trademarks of Paizo Inc. The Pathfinder Roleplaying Game, Pathfinder Campaign Setting, Pathfinder Adventure Path, Pathfinder Adventure Card Game, Pathfinder Player Companion, Pathfinder Modules, Pathfinder Tales, Pathfinder Battles, Pathfinder Legends, Pathfinder Online, Starfinder Adventure Path, PaizoCon, RPG Superstar, The Golem's Got It, Titanic Games, the Titanic logo, and the Planet Stories planet logo are trademarks of Paizo Inc. Dungeons & Dragons, Dragon, Dungeon, and Polyhedron are registered trademarks of Wizards of the Coast, Inc., a subsidiary of Hasbro, Inc., and have been used by Paizo Inc. under license. Most product names are trademarks owned or used under license by the companies that publish those products; use of such names without mention of trademark status should not be construed as a challenge to such status."
 
 services:
     # default configuration for services in *this* file
