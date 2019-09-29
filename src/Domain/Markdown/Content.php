@@ -2,8 +2,6 @@
 
 namespace App\Domain\Markdown;
 
-use App\Domain\ValueObject\Markdown;
-
 class Content
 {
     private $contentPath;
@@ -25,7 +23,7 @@ class Content
         $parser = new \Parsedown();
         $parsed = $parser->parse($content);
 
-        return new Markdown(
+        return new ValueObject(
             $content,
             $parsed
         );

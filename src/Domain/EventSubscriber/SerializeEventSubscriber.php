@@ -1,8 +1,9 @@
 <?php
 
-namespace App\Domain\PropertySorting;
+namespace App\Domain\EventSubscriber;
 
 use ApiPlatform\Core\EventListener\EventPriorities;
+use App\Domain\PropertySorting\PropertySorter;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\ViewEvent;
 use Symfony\Component\HttpKernel\KernelEvents;

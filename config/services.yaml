@@ -4,6 +4,14 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
+  projectname: PathfinderDB
+  paypallink: https://paypal.me/joern
+  copyrightNotice:
+    author: 'Jörn Meyer'
+    github: https://github.com/joerncodes/pathfinderdb
+    notice: '%projectname% was coded by a single guy. If you find it helpful, please consider donating a buck or two!'
+    support:
+      paypal: '%paypallink%'
 
 services:
     # default configuration for services in *this* file
@@ -36,3 +44,7 @@ services:
 
     App\Domain\PropertySorting\PropertySorter:
         arguments: [!tagged property.sorter ]
+
+    App\Domain\EventSubscriber\CopyrightRespondListener:
+        arguments:
+          $copyrightNotice: '%copyrightNotice%'

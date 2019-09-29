@@ -21,7 +21,8 @@
         "doctrine/doctrine-fixtures-bundle": "^3.2",
         "friendsofphp/php-cs-fixer": "^2.15",
         "hautelook/alice-bundle": "^2.5",
-        "symfony/maker-bundle": "^1.13"
+        "symfony/maker-bundle": "^1.13",
+        "symfony/var-dumper": "^4.3"
     },
     "config": {
         "preferred-install": {
