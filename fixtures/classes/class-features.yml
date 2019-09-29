@@ -89,3 +89,28 @@ App\Entity\CharacterClassFeature:
     slug: cleric-bonus-languages
     featureType: null
     description: <markdown(features/cleric/bonus-languages.md)>
+  cleric-lightning-arc:
+    name: Lightning Arc
+    slug: cleric-lightning-arc
+    featureType: Sp
+    description: <markdown(features/cleric/lightning-arc.md)>
+  cleric-electricity-resistance:
+    name: Electricity Resistance
+    slug: cleric-electricity-resistance
+    featureType: Ex
+    description: <markdown(features/cleric/electricity-resistance.md)>
+  cleric-thundercloud:
+    name: Thundercloud
+    slug: cleric-thundercloud
+    featureType: Su
+    description: <markdown(features/cleric/thundercloud.md)>
+  cleric-lightning-rod:
+    name: Lightning Rod
+    slug: cleric-lightning-rod
+    featureType: Su
+    description: <markdown(features/cleric/lightning-rod.md)>
+  cleric-wind-blast:
+    name: Wind Blast
+    slug: cleric-wind-blast
+    featureType: Su
+    description: <markdown(features/cleric/wind-blast.md)>

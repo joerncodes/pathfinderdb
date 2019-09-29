@@ -29,6 +29,11 @@ class CharacterClassFeature extends ApiBase
      */
     private $description;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Domain", inversedBy="features")
+     */
+    private $domain;
+
     public function getFeatureType(): ?string
     {
         return $this->featureType;
@@ -49,6 +54,18 @@ class CharacterClassFeature extends ApiBase
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDomain(): ?Domain
+    {
+        return $this->domain;
+    }
+
+    public function setDomain(?Domain $domain): self
+    {
+        $this->domain = $domain;
 
         return $this;
     }

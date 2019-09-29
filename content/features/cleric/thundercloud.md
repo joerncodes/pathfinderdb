@@ -1,0 +1,3 @@
+*The following granted power replaces the electricity resistance power of the Air domain.*
+
+At 8th level, you can, as a standard action, summon a storm cloud. This power functions as fog cloud except that creatures inside the cloud are deafened and take 2d6 points of electricity damage each round from the flashes of thunder and lightning. Once created, you can concentrate on the cloud to move it up to 30 feet each round. You can use this ability for a number of rounds per day equal to your cleric level. These rounds do not need to be consecutive.
