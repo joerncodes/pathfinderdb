@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h1>I need YOU!</h1>
+            <p class="lead">...to help this project!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <p>{{ projectname }} is a one-man operation, at least as far as the code is concerned. If you love Pathfinder as much as I do and want to support my work, please consider doing so in the following ways!</p>
+        </div>
+        <div class="col-12">
+            <h3>Donating</h3>
+            <p>By far the easiest and most direct way to influence the project is by <strong>donating money!</strong></p>
+            <p>Your donation supports the server costs of {{ projectname }} and enables my to do more work on this project.</p>
+            <p><a href="{{ paypallink }}" class="btn btn-primary btn-lg">Donate now!</a></p>
+        </div>
+    </div>
+{% endblock %}
