@@ -58,6 +58,7 @@ class Spell extends ApiBase
 
     /**
      * @ORM\Column(type="string", length=100, nullable=true)
+     * @Groups("read")
      */
     private $area;
 
@@ -77,6 +78,24 @@ class Spell extends ApiBase
      * @Groups("read")
      */
     private $description;
+
+    /**
+     * @ORM\Column(type="string", length=100)
+     * @Groups("read")
+     */
+    private $duration;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     * @Groups("read")
+     */
+    private $savingThrow;
+
+    /**
+     * @ORM\Column(type="string", length=100, nullable=true)
+     * @Groups("read")
+     */
+    private $spellResistance;
 
     public function __construct()
     {
@@ -236,6 +255,42 @@ class Spell extends ApiBase
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getDuration(): ?string
+    {
+        return $this->duration;
+    }
+
+    public function setDuration(string $duration): self
+    {
+        $this->duration = $duration;
+
+        return $this;
+    }
+
+    public function getSavingThrow(): ?string
+    {
+        return $this->savingThrow;
+    }
+
+    public function setSavingThrow(?string $savingThrow): self
+    {
+        $this->savingThrow = $savingThrow;
+
+        return $this;
+    }
+
+    public function getSpellResistance(): ?string
+    {
+        return $this->spellResistance;
+    }
+
+    public function setSpellResistance(?string $spellResistance): self
+    {
+        $this->spellResistance = $spellResistance;
 
         return $this;
     }

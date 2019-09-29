@@ -9,6 +9,9 @@ App\Entity\Spell:
     subschool: Healing
     components: [V,S]
     description: <markdown(spells/cure-light-wounds.md)>
+    duration: Instanteneous
+    savingThrow: Will half (harmless); see text
+    spellResistance: yes (harmless); see text
     source: "@core-rulebook"
   mage-armor:
     name: Mage Armor
@@ -18,6 +21,9 @@ App\Entity\Spell:
     spellRange: touch
     subschool: Creation
     target: creature touched
+    duration: 1 hour/level (D)
+    savingThrow: Will negates (harmless)
+    spellResistance: no
     components: [V,S,F (a piece of cured leather)]
     description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"

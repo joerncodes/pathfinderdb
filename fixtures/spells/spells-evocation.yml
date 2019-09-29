@@ -7,6 +7,9 @@ App\Entity\Spell:
     spellRange: long (400 ft. + 40 ft./level)
     subschool: Fire
     area: 20-ft.-radius spread
+    duration: instanteneous
+    savingThrow: Reflex half
+    spellResistance: yes
     components: [V,S,'M (a ball of bat guano and sulfur)']
     description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"
