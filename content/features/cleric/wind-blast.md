@@ -1,0 +1,3 @@
+*The following granted power replaces the lightning arc power of the Air domain.*
+
+As a standard action, you can unleash a blast of air in a 30-foot line. Make a combat maneuver check against each creature in the line, using your caster level as your base attack bonus and your Wisdom modifier in place of your Strength modifier. Treat the results as a bull rush attempt. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.

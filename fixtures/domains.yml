@@ -1,0 +1,25 @@
+App\Entity\Domain:
+  air-domain:
+    name: Air Domain
+    slug: air-domain
+    description: You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.
+    feature: ["@cleric-lightning-arc","@cleric-electricity-resistance"]
+    source: "@core-rulebook"
+  cloud-domain:
+    name: Cloud Domain
+    slug: cloud-domain
+    parentDomain: "@air-domain"
+    feature: ["@cleric-thundercloud"]
+    source: "@core-rulebook"
+  lightning-domain:
+    name: Lightning Domain
+    slug: lightning-domain
+    parentDomain: "@air-domain"
+    feature: ["@cleric-lightning-rod"]
+    source: "@core-rulebook"
+  wind-domain:
+    name: Wind Domain
+    slug: wind-domain
+    parentDomain: "@air-domain"
+    feature: ["@cleric-wind-blast"]
+    source: "@core-rulebook"
