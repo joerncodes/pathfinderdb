@@ -70,6 +70,12 @@ class CharacterClassAdvancement
      */
     private $feature;
 
+    /**
+     * @ORM\Column(type="json_array", nullable=true)
+     * @Groups("read")
+     */
+    private $spellsPerDay = [];
+
     public function __construct()
     {
         $this->feature = new ArrayCollection();
@@ -183,6 +189,18 @@ class CharacterClassAdvancement
         if ($this->feature->contains($feature)) {
             $this->feature->removeElement($feature);
         }
+
+        return $this;
+    }
+
+    public function getSpellsPerDay(): ?array
+    {
+        return $this->spellsPerDay;
+    }
+
+    public function setSpellsPerDay(?array $spellsPerDay): self
+    {
+        $this->spellsPerDay = $spellsPerDay;
 
         return $this;
     }

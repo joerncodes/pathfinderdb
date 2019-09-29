@@ -1,0 +1,1 @@
+Clerics can prepare a number of orisons, or 0-level spells, each day, as noted on Table: Cleric under “Spells per day.” These spells are treated like any other spell, but they are not expended when cast and may be used again.

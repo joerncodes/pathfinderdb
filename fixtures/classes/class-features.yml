@@ -59,3 +59,33 @@ App\Entity\CharacterClassFeature:
     slug: barbarian-mighty-rage
     featureType: Ex
     description: <markdown(features/barbarian/tireless-rage.md)>
+  cleric-aura:
+    name: Aura
+    slug: cleric-aura
+    featureType: Ex
+    description: <markdown(features/cleric/aura.md)>
+  cleric-channel-energy:
+    name: Channel Energy
+    slug: cleric-channel-energy
+    featureType: Su
+    description: <markdown(features/cleric/channel-energy.md)>
+  cleric-domains:
+    name: Domains
+    slug: cleric-domains
+    featureType: null
+    description: <markdown(features/cleric/domains.md)>
+  cleric-orisons:
+    name: Orisons
+    slug: cleric-orisons
+    featureType: null
+    description: <markdown(features/cleric/orisons.md)>
+  cleric-spontaneous-casting:
+    name: Spontaneous Casting
+    slug: cleric-spontaneous-casting
+    featureType: null
+    description: <markdown(features/cleric/spontaneous-casting.md)>
+  cleric-bonus-languages:
+    name: Bonus Languages
+    slug: cleric-bonus-languages
+    featureType: null
+    description: <markdown(features/cleric/bonus-languages.md)>

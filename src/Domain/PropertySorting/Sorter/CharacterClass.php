@@ -18,7 +18,7 @@ final class CharacterClass extends Base
             'alignment',
             'startingWealth',
             'classSkills',
-            #'advancement',
+            'advancement',
             'source',
             'type'
         ];

@@ -1,0 +1,171 @@
+App\Entity\CharacterClassAdvancement:
+  cleric-1:
+    characterClass: "@cleric"
+    level: 1
+    baseAttackBonus: "+0"
+    fortitudeSave: 2
+    reflexSave: 0
+    willSave: 2
+    spellsPerDay: { "0th": "3", "1th": "1+1"}
+    feature: ["@cleric-aura","@cleric-channel-energy","@cleric-domains","@cleric-orisons","@cleric-spontaneous-casting", "@cleric-bonus-languages"]
+  cleric-2:
+    characterClass: "@cleric"
+    level: 2
+    baseAttackBonus: "+1"
+    fortitudeSave: 3
+    reflexSave: 0
+    willSave: 3
+    spellsPerDay: { "0th": "4", "1th": "2+1"}
+  cleric-3:
+    characterClass: "@cleric"
+    level: 3
+    baseAttackBonus: "+2"
+    fortitudeSave: 3
+    reflexSave: 1
+    willSave: 3
+    spellsPerDay: { "0th": "4", "1th": "2+1", "2nd": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-4:
+    characterClass: "@cleric"
+    level: 4
+    baseAttackBonus: "+3"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 4
+    spellsPerDay: { "0th": "4", "1th": "3+1", "2nd": "2+1"}
+  cleric-5:
+    characterClass: "@cleric"
+    level: 5
+    baseAttackBonus: "+3"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 4
+    spellsPerDay: { "0th": "4", "1th": "3+1", "2nd": "2+1", "3rd": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-6:
+    characterClass: "@cleric"
+    level: 6
+    baseAttackBonus: "+4"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 5
+    spellsPerDay: { "0th": "4", "1th": "3+1", "2nd": "3+1", "3rd": "2+1"}
+  cleric-7:
+    characterClass: "@cleric"
+    level: 7
+    baseAttackBonus: "+5"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 5
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "3+1", "3rd": "2+1", "4th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-8:
+    characterClass: "@cleric"
+    level: 8
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 6
+    reflexSave: 2
+    willSave: 6
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "3+1", "3rd": "3+1", "4th": "2+1"}
+  cleric-9:
+    characterClass: "@cleric"
+    level: 9
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 6
+    reflexSave: 3
+    willSave: 6
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "3+1", "4th": "2+1", "5th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-10:
+    characterClass: "@cleric"
+    level: 10
+    baseAttackBonus: "+7/+2"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 7
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "3+1", "4th": "3+1", "5th": "2+1"}
+  cleric-11:
+    characterClass: "@cleric"
+    level: 11
+    baseAttackBonus: "+8/+3"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 7
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "3+1", "5th": "2+1", "6th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-12:
+    characterClass: "@cleric"
+    level: 12
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 8
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "3+1", "5th": "3+1", "6th": "2+1"}
+  cleric-13:
+    characterClass: "@cleric"
+    level: 13
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 8
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "3+1", "6th": "2+1", "7th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-14:
+    characterClass: "@cleric"
+    level: 14
+    baseAttackBonus: "+10/+5"
+    fortitudeSave: 9
+    reflexSave: 4
+    willSave: 9
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "3+1", "6th": "3+1", "7th": "2+1"}
+  cleric-15:
+    characterClass: "@cleric"
+    level: 15
+    baseAttackBonus: "+11/+6/+2"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 10
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "3+1", "7th": "2+1", "8th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-16:
+    characterClass: "@cleric"
+    level: 16
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 10
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "3+1", "7th": "3+1", "8th": "2+1"}
+  cleric-17:
+    characterClass: "@cleric"
+    level: 17
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 10
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "4+1", "7th": "3+1", "8th": "2+1", "9th": "1+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-18:
+    characterClass: "@cleric"
+    level: 18
+    baseAttackBonus: "+13/+8/+3"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 11
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "4+1", "7th": "3+1", "8th": "3+1", "9th": "2+1"}
+  cleric-19:
+    characterClass: "@cleric"
+    level: 19
+    baseAttackBonus: "+14/+9/+4"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 11
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "4+1", "7th": "4+1", "8th": "3+1", "9th": "3+1"}
+    feature: ["@cleric-channel-energy"]
+  cleric-20:
+    characterClass: "@cleric"
+    level: 20
+    baseAttackBonus: "+15/+10/+5"
+    fortitudeSave: 12
+    reflexSave: 6
+    willSave: 12
+    spellsPerDay: { "0th": "4", "1th": "4+1", "2nd": "4+1", "3rd": "4+1", "4th": "4+1", "5th": "4+1", "6th": "4+1", "7th": "4+1", "8th": "4+1", "9th": "4+1"}

@@ -17,6 +17,7 @@ final class CharacterClassAdvancement extends Base
             'fortitudeSave',
             'reflexSave',
             'willSave',
+            'spellsPerDay',
             'feature',
         ];
     }
