@@ -59,6 +59,116 @@ App\Entity\CharacterClassFeature:
     slug: barbarian-mighty-rage
     featureType: Ex
     description: <markdown(features/barbarian/tireless-rage.md)>
+  bard-weapon-and-armor-proficiency:
+    name: Weapon and Armor Proficiency
+    slug: bard-weapon-and-armor-proficiency
+    featureType: null
+    description: <markdown(features/bard/weapon-and-armor-proficiency.md)>
+  bard-spells:
+    name: Spells
+    slug: bard-spells
+    featureType: null
+    description: <markdown(features/bard/spells.md)>
+  bard-bardic-knowledge:
+    name: Bardic Knowledge
+    slug: bard-bardic-knowledge
+    featureType: Ex
+    description: <markdown(features/bard/bardic-knowledge.md)>
+  bard-bardic-performance:
+    name: Bardic Performance
+    slug: bard-bardic-performance
+    featureType: null
+    description: <markdown(features/bard/bardic-performance.md)>
+  bard-cantrips:
+    name: Cantrips
+    slug: bard-cantrips
+    featureType: Sp
+    description: <markdown(features/bard/cantrips.md)>
+  bard-countersong:
+    name: Countersong
+    slug: bard-countersong
+    featureType: Su
+    description: <markdown(features/bard/countersong.md)>
+  bard-distraction:
+    name: Distraction
+    slug: bard-distraction
+    featureType: Su
+    description: <markdown(features/bard/distraction.md)>
+  bard-fascinate:
+    name: Fascinate
+    slug: bard-fascinate
+    featureType: Su
+    description: <markdown(features/bard/fascinate.md)>
+  bard-inspire-courage:
+    name: Inspire Courage
+    slug: brad-inspire-courage
+    featureType: Su
+    description: <markdown(features/bard/inspire-courage.md)>
+  bard-versatile-performance:
+    name: Versatile Performance
+    slug: bard-versatile-performance
+    featureType: Ex
+    description: <markdown(features/bard/versatile-performance.md)>
+  bard-well-versed:
+    name: Well Versed
+    slug: bard-well-versed
+    featureType: Ex
+    description: <markdown(features/bard/well-versed.md)>
+  bard-inspire-competence:
+    name: Inspire Competence
+    slug: bard-inspire-competence
+    featureType: Su
+    description: <markdown(features/bard/inspire-competence.md)>
+  bard-lore-master:
+    name: Lore Master
+    slug: bard-lore-master
+    featureType: Ex
+    description: <markdown(features/bard/lore-master.md)>
+  bard-suggestion:
+    name: Suggestion
+    slug: bard-suggestion
+    featureType: Sp
+    description: <markdown(features/bard/suggestion.md)>
+  bard-dirge-of-doom:
+    name: Dirge of Doom
+    slug: bard-dirge-of-doom
+    featureType: Su
+    description: <markdown(features/bard/dirge-of-doom.md)>
+  bard-inspire-greatness:
+    name: Inspire Greatness
+    slug: bard-inspire-greatness
+    featureType: Su
+    description: <markdown(features/bard/inspire-greatness.md)>
+  bard-jack-of-all-trades:
+    name: Jack of all Trades
+    slug: bard-jack-of-all-trades
+    featureType: Ex
+    description: <markdown(features/bard/jack-of-all-trades.md)>
+  bard-soothing-performance:
+    name: Soothing Performance
+    slug: bard-soothing-performance
+    featureType: Su
+    description: <markdown(features/bard/soothing-performance.md)>
+  bard-frightening-tune:
+    name: Frightening Tune
+    slug: bard-frightening-tune
+    featureType: Sp
+    description: <markdown(features/bard/frightening-tune.md)>
+  bard-inspire-heroics:
+    name: Inspire Heroics
+    slug: bard-inspire-heroics
+    featureType: Su
+    description: <markdown(features/bard/inspire-heroics.md)>
+  bard-mass-suggestion:
+    name: Mass Suggestion
+    slug: bard-mass-suggestion
+    featureType: Sp
+    description: <markdown(features/bard/mass-suggestion.md)>
+  bard-deadly-performance:
+    name: Deadly Performance
+    slug: bard-deadly-performance
+    featureType: Ex
+    description: <markdown(features/bard/deadly-performance.md)>
   cleric-aura:
     name: Aura
     slug: cleric-aura

@@ -9,7 +9,8 @@ twig:
         githublink: '%githublink%'
         changelog:
             'Sept. 30, 2019':
-                - 'added Rogue and Monk to the core classes. Somehow forgot those guys'
-                - '`description` and `role` added for classes'
-                - '`domain` and domain spells added'
                 - 'Changelog added 🎉'
+                - '`domain` and domain spells added'
+                - '`description` and `role` added for classes'
+                - 'added Rogue and Monk to the core classes. Somehow forgot those guys'
+                - 'Bard class advancements added 🎸'

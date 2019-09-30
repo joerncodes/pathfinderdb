@@ -1,0 +1,1 @@
+A bard adds half his class level (minimum 1) to all Knowledge skill checks and may make all Knowledge skill checks untrained.

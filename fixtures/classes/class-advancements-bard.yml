@@ -1,0 +1,178 @@
+App\Entity\CharacterClassAdvancement:
+  bard-1:
+    characterClass: "@bard"
+    level: 1
+    baseAttackBonus: "+0"
+    fortitudeSave: 0
+    reflexSave: 2
+    willSave: 2
+    spellsPerDay: { "1st": 1 }
+    feature: ["@bard-bardic-knowledge","@bard-bardic-performance","@bard-cantrips","@bard-countersong","@bard-distraction", "@bard-fascinate", "@bard-inspire-courage", "@bard-spells","@bard-weapon-and-armor-proficiency"]
+  bard-2:
+    characterClass: "@bard"
+    level: 2
+    baseAttackBonus: "+1"
+    fortitudeSave: 0
+    reflexSave: 3
+    willSave: 3
+    spellsPerDay: { "1st": 2 }
+    feature: ["@bard-versatile-performance","@bard-well-versed"]
+  bard-3:
+    characterClass: "@bard"
+    level: 3
+    baseAttackBonus: "+2"
+    fortitudeSave: 1
+    reflexSave: 3
+    willSave: 3
+    spellsPerDay: { "1st": 3 }
+    feature: ["@bard-inspire-competence"]
+  bard-4:
+    characterClass: "@bard"
+    level: 4
+    baseAttackBonus: "+3"
+    fortitudeSave: 1
+    reflexSave: 4
+    willSave: 4
+    spellsPerDay: { "1st": 3, "2nd": 1 }
+  bard-5:
+    characterClass: "@bard"
+    level: 5
+    baseAttackBonus: "+3"
+    fortitudeSave: 1
+    reflexSave: 4
+    willSave: 4
+    feature: ["@bard-inspire-courage","@bard-lore-master"]
+    spellsPerDay: { "1st": 4, "2nd": 2 }
+  bard-6:
+    characterClass: "@bard"
+    level: 6
+    baseAttackBonus: "+4"
+    fortitudeSave: 2
+    reflexSave: 5
+    willSave: 5
+    feature: ["@bard-suggestion","@bard-versatile-performance"]
+    spellsPerDay: { "1st": 4, "2nd": 3 }
+  bard-7:
+    characterClass: "@bard"
+    level: 7
+    baseAttackBonus: "+5"
+    fortitudeSave: 2
+    reflexSave: 5
+    willSave: 5
+    feature: ["@bard-inspire-competence"]
+    spellsPerDay: { "1st": 4, "2nd": 3, "3rd": 1 }
+  bard-8:
+    characterClass: "@bard"
+    level: 8
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 2
+    reflexSave: 6
+    willSave: 6
+    feature: ["@bard-dirge-of-doom"]
+    spellsPerDay: { "1st": 4, "2nd": 4, "3rd": 2 }
+  bard-9:
+    characterClass: "@bard"
+    level: 9
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 3
+    reflexSave: 6
+    willSave: 6
+    feature: ["@bard-inspire-greatness"]
+    spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 3 }
+  bard-10:
+    characterClass: "@bard"
+    level: 10
+    baseAttackBonus: "+7/+2"
+    fortitudeSave: 3
+    reflexSave: 7
+    willSave: 7
+    feature: ["@bard-jack-of-all-trades", "@bard-versatile-performance"]
+    spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 3, "4th": 1 }
+  bard-11:
+    characterClass: "@bard"
+    level: 11
+    baseAttackBonus: "+8/+3"
+    fortitudeSave: 3
+    reflexSave: 7
+    willSave: 7
+    feature: ["@bard-inspire-competence","@bard-inspire-courage","@bard-lore-master"]
+    spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 4, "4th": 2 }
+  bard-12:
+    characterClass: "@bard"
+    level: 12
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 4
+    reflexSave: 8
+    willSave: 8
+    feature: ["@bard-soothing-performance"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 3 }
+  bard-13:
+    characterClass: "@bard"
+    level: 13
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 4
+    reflexSave: 8
+    willSave: 8
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 3, "5th": 1 }
+  bard-14:
+    characterClass: "@bard"
+    level: 14
+    baseAttackBonus: "+10/+5"
+    fortitudeSave: 4
+    reflexSave: 9
+    willSave: 9
+    feature: ["@bard-frightening-tune","@bard-versatile-performance"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 4, "5th": 2 }
+  bard-15:
+    characterClass: "@bard"
+    level: 15
+    baseAttackBonus: "+11/+6/+1"
+    fortitudeSave: 5
+    reflexSave: 9
+    willSave: 9
+    feature: ["@bard-inspire-competence","@bard-inspire-heroics"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 3 }
+  bard-16:
+    characterClass: "@bard"
+    level: 16
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 5
+    reflexSave: 10
+    willSave: 10
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 3, "6th": 1 }
+  bard-17:
+    characterClass: "@bard"
+    level: 17
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 5
+    reflexSave: 10
+    willSave: 10
+    feature: ["@bard-inspire-courage","@bard-lore-master"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 4, "6th": 2 }
+  bard-18:
+    characterClass: "@bard"
+    level: 18
+    baseAttackBonus: "+13/+8/+3"
+    fortitudeSave: 6
+    reflexSave: 11
+    willSave: 11
+    feature: ["@bard-mass-suggestion","@bard-versatile-performance"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 4, "6th": 3 }
+  bard-19:
+    characterClass: "@bard"
+    level: 19
+    baseAttackBonus: "+14/+9/+4"
+    fortitudeSave: 6
+    reflexSave: 11
+    willSave: 11
+    feature: ["@bard-inspire-competence"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 5, "6th": 4 }
+  bard-20:
+    characterClass: "@bard"
+    level: 20
+    baseAttackBonus: "+15/+10/+5"
+    fortitudeSave: 6
+    reflexSave: 12
+    willSave: 12
+    feature: ["@bard-deadly-performance"]
+    spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 5, "6th": 5 }
