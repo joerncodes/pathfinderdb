@@ -9,6 +9,15 @@ index:
     maxAge:    86400
     sharedAge: 86400
 
+domains:
+  path: /domains
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'static/domains.html.twig'
+    maxAge:    86400
+    sharedAge: 86400
+
+
 contribute:
   path: /contribute
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
