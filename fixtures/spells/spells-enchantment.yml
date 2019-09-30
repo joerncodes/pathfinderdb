@@ -1,16 +1,16 @@
 App\Entity\Spell:
-  dancing-lights:
-    name: Dancing Lights
-    slug: dancing-lights
-    school: "@evoc"
+  daze:
+    name: Daze
+    slug: daze
+    school: "@ench"
     castingTime: 1 standard action
-    spellRange: medium (100 ft. + 10 ft./level)
-    subschool: Light
-    duration: 1 minute (D)
-    savingThrow: none
-    spellResistance: no
-    components: [V,S]
-    description: <markdown(spells/dancing-lights.md)>
+    spellRange: close (25 ft. + 5 ft./2 levels)
+    subschool: compulsion (mind-affecting)
+    duration: 1 round
+    savingThrow: Will negates
+    spellResistance: yes
+    components: [V,S, 'M (a pinch of wool or similar substance)']
+    description: <markdown(spells/daze.md)>
     source: "@core-rulebook"
   fireball:
     name: Fireball

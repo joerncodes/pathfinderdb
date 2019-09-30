@@ -15,6 +15,21 @@ App\Entity\SpellClassLevel:
     spell: "@cure-light-wounds"
     characterClass: '@ranger'
     level: 2
+  #psychic, shaman
+  dancing-lights-{bard, magus, sorcerer, wizard, witch}:
+    spell: "@dancing-lights"
+    characterClass: '@<current()>'
+    level: 0
+  #psychic, shaman, unchained-summoner
+  daze-{bard, inquisitor, magus, sorcerer, wizard, summoner, witch}:
+    spell: "@daze"
+    characterclass: '@<current()>'
+    level: 0
+  #psychic, shaman, unchained-summoner
+  detect-magic-{bard, cleric, oracle, druid, inquisitor, magus, sorcerer, wizard, summoner, witch}:
+    spell: "@detect-magic"
+    characterclass: '@<current()>'
+    level: 0
   #shocking-grasp-bloodrager:
     #spell: "@shocking-grasp"
     #characterClass: '@bloodrager'
