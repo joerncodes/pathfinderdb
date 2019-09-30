@@ -1,0 +1,3 @@
+The following granted power replaces the fire resistance power of the Fire domain.
+
+At 8th level, you can create a wall of swirling ashes anywhere within 100 feet. This wall is up to 20 feet high and up to 10 feet long per cleric level you possess. The wall of ash blocks line of sight, and any creature passing through it must make a Fortitude save or be blinded for 1d4 rounds. The wall of ash reveals invisible creatures that are inside it or adjacent to it, although they become invisible again if they move away from the wall. You can use this ability for a number of minutes per day equal to your cleric level, but these minutes do not need to be consecutive.

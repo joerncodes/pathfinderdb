@@ -14,3 +14,8 @@ App\Entity\Source:
     slug: ultimate-magic
     copyright: "© 2011, Paizo Publishing, LLC; Authors: Jason Bulmahn, Tim Hitchcock, Colin McComb, Rob McCreary, Jason Nelson, Stephen Radney-MacFarland, Sean K Reynolds, Owen K.C. Stephens, and Russ Taylor."
     link: https://www.amazon.com/dp/1601252994/ref=cm_sw_em_r_mt_dp_U_JeGJDbVEQFW7A
+  inner-sea-gods:
+    name: "Pathfinder Campaign Setting: Inner Sea Gods"
+    slug: inner-sea-gods
+    copyright: "© 2014, Paizo Publishing, LLC; Authors: Sean K Reynolds, with Amanda Hamon, James Jacobs, John Ling, Mark Moreland, David N. Ross, F. Wesley Schneider, Amber E. Scott, Tork Shaw, James L. Sutter, Jerome Virnich."
+    link: https://www.amazon.com/gp/product/1601255977/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1601255977&linkCode=as2&tag=httpwwwd20pfs-20

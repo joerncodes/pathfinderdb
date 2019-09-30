@@ -1,0 +1,3 @@
+The following granted power replaces the fire bolt power of the Fire domain.
+
+As a standard action, you can stretch out your hand toward any visible fire source within 60 feet and beckon it toward you. This causes a ribbon-thin streak of fire to approach you in a straight line through the air. Any creature directly in the fire ribbon’s path takes 1d4 points of fire damage; a successful Reflex save (DC = 10 + 1/2 your cleric level + your Wisdom modifier) negates this damage. When the ribbon of fire reaches your hand, it either extinguishes or lights a flammable object of your choice that you’re holding. You can use this ability a number of times per day equal to 3 + your Wisdom modifier.

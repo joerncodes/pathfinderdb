@@ -1,0 +1,5 @@
+App\Entity\SpellDomainLevel:
+  fireball-3:
+    spell: "@fireball"
+    domain: '@fire-domain'
+    level: 3

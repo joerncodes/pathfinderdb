@@ -114,3 +114,28 @@ App\Entity\CharacterClassFeature:
     slug: cleric-wind-blast
     featureType: Su
     description: <markdown(features/cleric/wind-blast.md)>
+  cleric-fire-bolt:
+    name: Fire Bolt
+    slug: cleric-fire-bolt
+    featureType: Sp
+    description: <markdown(features/cleric/fire-bolt.md)>
+  cleric-fire-resistance:
+    name: Fire Resistance
+    slug: cleric-fire-resistance
+    featureType: Ex
+    description: <markdown(features/cleric/fire-resistance.md)>
+  cleric-call-fire:
+    name: Call Fire
+    slug: cleric-call-fire
+    featureType: Su
+    description: <markdown(features/cleric/call-fire.md)>
+  cleric-wall-of-ashes:
+    name: Wall of Ashes
+    slug: cleric-wall-of-ashes
+    featureType: Su
+    description: <markdown(features/cleric/wall-of-ashes.md)>
+  cleric-cloud-of-smoke:
+    name: Cloud of Smoke
+    slug: cleric-cloud-of-smoke
+    featureType: Su
+    description: <markdown(features/cleric/cloud-of-smoke.md)>

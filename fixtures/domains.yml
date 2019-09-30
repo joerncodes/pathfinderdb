@@ -1,25 +1,49 @@
 App\Entity\Domain:
   air-domain:
-    name: Air Domain
+    name: Air
     slug: air-domain
     description: You can manipulate lightning, mist, and wind, traffic with air creatures, and are resistant to electricity damage.
     feature: ["@cleric-lightning-arc","@cleric-electricity-resistance"]
     source: "@core-rulebook"
   cloud-domain:
-    name: Cloud Domain
+    name: Cloud
     slug: cloud-domain
     parentDomain: "@air-domain"
     feature: ["@cleric-thundercloud"]
     source: "@core-rulebook"
   lightning-domain:
-    name: Lightning Domain
+    name: Lightning
     slug: lightning-domain
     parentDomain: "@air-domain"
     feature: ["@cleric-lightning-rod"]
     source: "@core-rulebook"
   wind-domain:
-    name: Wind Domain
+    name: Wind
     slug: wind-domain
     parentDomain: "@air-domain"
     feature: ["@cleric-wind-blast"]
     source: "@core-rulebook"
+  fire-domain:
+    name: Fire
+    slug: fire-domain
+    description: You can call forth fire, command creatures of the inferno, and your flesh does not burn.
+    feature: ["@cleric-fire-bolt"]
+    source: "@core-rulebook"
+  arson-domain:
+    name: Arson
+    slug: arson-domain
+    parentDomain: "@fire-domain"
+    feature: ["@cleric-call-fire"]
+    source: "@inner-sea-gods"
+  ash-domain:
+    name: Ash
+    slug: ash-domain
+    parentDomain: "@fire-domain"
+    feature: ["@cleric-wall-of-ashes"]
+    source: "@advanced-players-guide"
+  smoke-domain:
+    name: Smoke
+    slug: smoke-domain
+    parentDomain: "@fire-domain"
+    feature: ["@cleric-cloud-of-smoke"]
+    source: "@advanced-players-guide"

@@ -20,6 +20,7 @@ class Spell extends Base
             'spellResistance',
             'description',
             'levels',
+            'domains',
             'source',
         ];
     }

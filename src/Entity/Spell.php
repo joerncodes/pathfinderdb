@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
+use ApiPlatform\Core\DataProvider\CollectionDataProviderInterface;
 use App\Entity\Traits\HasSourceTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -97,14 +98,35 @@ class Spell extends ApiBase
      */
     private $spellResistance;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\SpellDomainLevel", mappedBy="spell")
+     * @var SpellDomainLevel[]
+     */
+    private $spellDomainLevels;
+
     public function __construct()
     {
         $this->spellClassLevels = new ArrayCollection();
+        $this->spellDomainLevels = new ArrayCollection();
     }
 
     public function getDescription(): ?string
     {
         return $this->description;
+    }
+
+    /**
+     * @Groups("read")
+     */
+    public function getDomains(): array
+    {
+        $domains= [];
+        foreach($this->spellDomainLevels as $spellDomainLevel)
+        {
+            $domains[] = $spellDomainLevel->getDomain()->getName() . ' '
+                . $spellDomainLevel->getLevel();
+        }
+        return $domains;
     }
 
     /**
@@ -291,6 +313,37 @@ class Spell extends ApiBase
     public function setSpellResistance(?string $spellResistance): self
     {
         $this->spellResistance = $spellResistance;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|SpellDomainLevel[]
+     */
+    public function getSpellDomainLevels(): Collection
+    {
+        return $this->spellDomainLevels;
+    }
+
+    public function addSpellDomainLevel(SpellDomainLevel $spellDomainLevel): self
+    {
+        if (!$this->spellDomainLevels->contains($spellDomainLevel)) {
+            $this->spellDomainLevels[] = $spellDomainLevel;
+            $spellDomainLevel->setSpell($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSpellDomainLevel(SpellDomainLevel $spellDomainLevel): self
+    {
+        if ($this->spellDomainLevels->contains($spellDomainLevel)) {
+            $this->spellDomainLevels->removeElement($spellDomainLevel);
+            // set the owning side to null (unless already changed)
+            if ($spellDomainLevel->getSpell() === $this) {
+                $spellDomainLevel->setSpell(null);
+            }
+        }
 
         return $this;
     }

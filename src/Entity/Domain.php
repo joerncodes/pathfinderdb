@@ -36,10 +36,16 @@ class Domain extends ApiBase
      */
     private $subdomains;
 
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\SpellDomainLevel", mappedBy="domain")
+     */
+    private $spellDomainLevels;
+
     public function __construct()
     {
         $this->feature = new ArrayCollection();
         $this->subdomains = new ArrayCollection();
+        $this->spellDomainLevels = new ArrayCollection();
     }
 
     public function getDescription(): ?string
@@ -122,6 +128,37 @@ class Domain extends ApiBase
             // set the owning side to null (unless already changed)
             if ($subdomain->getParentDomain() === $this) {
                 $subdomain->setParentDomain(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|SpellDomainLevel[]
+     */
+    public function getSpellDomainLevels(): Collection
+    {
+        return $this->spellDomainLevels;
+    }
+
+    public function addSpellDomainLevel(SpellDomainLevel $spellDomainLevel): self
+    {
+        if (!$this->spellDomainLevels->contains($spellDomainLevel)) {
+            $this->spellDomainLevels[] = $spellDomainLevel;
+            $spellDomainLevel->setDomain($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSpellDomainLevel(SpellDomainLevel $spellDomainLevel): self
+    {
+        if ($this->spellDomainLevels->contains($spellDomainLevel)) {
+            $this->spellDomainLevels->removeElement($spellDomainLevel);
+            // set the owning side to null (unless already changed)
+            if ($spellDomainLevel->getDomain() === $this) {
+                $spellDomainLevel->setDomain(null);
             }
         }
 

@@ -1,4 +1,12 @@
 App\Entity\SpellClassLevel:
+  #fireball-blodrager-3:
+    #spell: "@fireball"
+    #characterClass: '@bloodrager'
+    #level: 1
+  fireball-level-{magus, sorcerer, wizard}:
+    spell: "@fireball"
+    characterClass: '@<current()>'
+    level: 3
   cure-light-wounds-level-{alchemist, bard, cleric, oracle, druid, inquisitor, paladin, witch}:
     spell: "@cure-light-wounds"
     characterClass: '@<current()>'
