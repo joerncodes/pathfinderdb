@@ -36,7 +36,7 @@ App\Entity\SpellClassLevel:
     characterClass: '@<current()>'
     level: 0
   #psychic
-  ghost-sound-{bard, magus, sorcerer, wizard):
+  ghost-sound-{bard, magus, sorcerer, wizard}:
     spell: '@flare'
     characterClass: '@<current()>'
     level: 0
