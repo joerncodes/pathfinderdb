@@ -9,11 +9,11 @@ index:
     maxAge:    86400
     sharedAge: 86400
 
-domains:
-  path: /domains
+magic:
+  path: /magic
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
   defaults:
-    template: 'static/domains.html.twig'
+    template: 'static/magic.html.twig'
     maxAge:    86400
     sharedAge: 86400
 
