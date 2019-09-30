@@ -6,7 +6,7 @@
             <h1>Magic</h1>
         </div>
         <div class="col-12 mb-4">
-            <form class="form" action="{{ path('api_spells_get_collection', {_format:'jsonld'}) }}">
+            <form class="form" action="{{ path('api_spells_get_collection', {_format:'json'}) }}">
                 <label for="name">Search for a spell by name</label>
                 <input class="form-control" name="name" id="name">
             </form>
@@ -14,35 +14,35 @@
         <div class="col-xs-12 col-md-6">
             <h3>Magic Schools</h3>
             <ul>
-                <li><a href="{{ path('api_schools_get_collection', {_format:'jsonld'}) }}">All Schools</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'abjuration',_format:'jsonld'}) }}">Abjuration</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'conjuration',_format:'jsonld'}) }}">Conjuration</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'divination',_format:'jsonld'}) }}">Divination</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'enchantment',_format:'jsonld'}) }}">Enchantment</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'evocation',_format:'jsonld'}) }}">Evocation</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'illusion',_format:'jsonld'}) }}">Illusion</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'necromancy',_format:'jsonld'}) }}">Necromancy</a></li>
-                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'transmutation',_format:'jsonld'}) }}">Transmutation</a></li>
+                <li><a href="{{ path('api_schools_get_collection', {_format:'json'}) }}">All Schools</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'abjuration',_format:'json'}) }}">Abjuration</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'conjuration',_format:'json'}) }}">Conjuration</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'divination',_format:'json'}) }}">Divination</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'enchantment',_format:'json'}) }}">Enchantment</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'evocation',_format:'json'}) }}">Evocation</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'illusion',_format:'json'}) }}">Illusion</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'necromancy',_format:'json'}) }}">Necromancy</a></li>
+                <li><a href="{{ path('api_schools_spells_get_subresource', {id:'transmutation',_format:'json'}) }}">Transmutation</a></li>
             </ul>
         </div>
         <div class="col-md-6">
             <h3>Cleric Domains</h3>
             <ul>
-                <li><a href="{{ path('api_domains_get_collection', {_format:'jsonld'}) }}">All Domains</a></li>
+                <li><a href="{{ path('api_domains_get_collection', {_format:'json'}) }}">All Domains</a></li>
                 <li>
-                    <a href="{{ path('api_domains_get_item', {id:'fire-domain',_format:'jsonld'}) }}">Fire</a>
+                    <a href="{{ path('api_domains_get_item', {id:'fire-domain',_format:'json'}) }}">Fire</a>
                     <ul>
-                        <li><a href="{{ path('api_domains_get_item', {id:'arson-domain',_format:'jsonld'}) }}">Arson</a></li>
-                        <li><a href="{{ path('api_domains_get_item', {id:'ash-domain',_format:'jsonld'}) }}">Ash</a></li>
-                        <li><a href="{{ path('api_domains_get_item', {id:'smoke-domain',_format:'jsonld'}) }}">Smoke</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'arson-domain',_format:'json'}) }}">Arson</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'ash-domain',_format:'json'}) }}">Ash</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'smoke-domain',_format:'json'}) }}">Smoke</a></li>
                     </ul>
                 </li>
                 <li>
-                    <a href="{{ path('api_domains_get_item', {id:'air-domain',_format:'jsonld'}) }}">Air</a>
+                    <a href="{{ path('api_domains_get_item', {id:'air-domain',_format:'json'}) }}">Air</a>
                     <ul>
-                        <li><a href="{{ path('api_domains_get_item', {id:'cloud-domain',_format:'jsonld'}) }}">Cloud</a></li>
-                        <li><a href="{{ path('api_domains_get_item', {id:'lightning-domain',_format:'jsonld'}) }}">Lightning</a></li>
-                        <li><a href="{{ path('api_domains_get_item', {id:'wind-domain',_format:'jsonld'}) }}">Wind</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'cloud-domain',_format:'json'}) }}">Cloud</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'lightning-domain',_format:'json'}) }}">Lightning</a></li>
+                        <li><a href="{{ path('api_domains_get_item', {id:'wind-domain',_format:'json'}) }}">Wind</a></li>
                     </ul>
                 </li>
             </ul>

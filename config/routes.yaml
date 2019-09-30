@@ -9,6 +9,14 @@ index:
     maxAge:    86400
     sharedAge: 86400
 
+classes:
+  path: /classes
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'static/classes.html.twig'
+    maxAge:    86400
+    sharedAge: 86400
+
 magic:
   path: /magic
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController

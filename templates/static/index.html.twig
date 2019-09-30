@@ -2,42 +2,12 @@
 
 {% block body %}
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 mb-4">
             <h1>Welcome!</h1>
         </div>
         <div class="col-12">
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. </p>
             <p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
-        </div>
-        <div class="col-12 mt-4 mb-2">
-            <h3>Classes</h3>
-        </div>
-        <div class="col-xs-12 col-md-6">
-            <h4>Core classes</h4>
-            <ul>
-                <li><a href="{{ path('api_classes_get_item', {id:'barbarian', _format:'jsonld'}) }}">Barbarian</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'bard', _format:'jsonld'}) }}">Bard</a>
-                <li><a href="{{ path('api_classes_get_item', {id:'cleric', _format:'jsonld'}) }}">Cleric</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'druid', _format:'jsonld'}) }}">Druid</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'fighter', _format:'jsonld'}) }}">Fighter</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'paladin', _format:'jsonld'}) }}">Paladin</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'ranger', _format:'jsonld'}) }}">Ranger</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'sorcerer', _format:'jsonld'}) }}">Sorcerer</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'wizard', _format:'jsonld'}) }}">Wizard</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-12 col-md-6">
-            <h4>Base classes</h4>
-            <ul>
-                <li><a href="{{ path('api_classes_get_item', {id:'alchmeist', _format:'jsonld'}) }}">Alchemist</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'cavalier', _format:'jsonld'}) }}">Cavalier</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'gunslinger', _format:'jsonld'}) }}">Gunslinger</a> </li>
-                <li><a href="{{ path('api_classes_get_item', {id:'inquisitor', _format:'jsonld'}) }}">Inquisitor</a> </li>
-                <li><a href="{{ path('api_classes_get_item', {id:'magus', _format:'jsonld'}) }}">Magus</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'oracle', _format:'jsonld'}) }}">Oracle</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'summoner', _format:'jsonld'}) }}">Summoner</a></li>
-                <li><a href="{{ path('api_classes_get_item', {id:'witch', _format:'jsonld'}) }}">Witch</a></li>
-            </ul>
         </div>
     </div>
 {% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12 mb-4">
+            <h1>Classes</h1>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h4>Core classes</h4>
+            <ul>
+                <li><a href="{{ path('api_classes_get_item', {id:'barbarian', _format:'json'}) }}">Barbarian</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'bard', _format:'json'}) }}">Bard</a>
+                <li><a href="{{ path('api_classes_get_item', {id:'cleric', _format:'json'}) }}">Cleric</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'druid', _format:'json'}) }}">Druid</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'fighter', _format:'json'}) }}">Fighter</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'paladin', _format:'json'}) }}">Paladin</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'ranger', _format:'json'}) }}">Ranger</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'sorcerer', _format:'json'}) }}">Sorcerer</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'wizard', _format:'json'}) }}">Wizard</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <h4>Base classes</h4>
+            <ul>
+                <li><a href="{{ path('api_classes_get_item', {id:'alchmeist', _format:'json'}) }}">Alchemist</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'cavalier', _format:'json'}) }}">Cavalier</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'gunslinger', _format:'json'}) }}">Gunslinger</a> </li>
+                <li><a href="{{ path('api_classes_get_item', {id:'inquisitor', _format:'json'}) }}">Inquisitor</a> </li>
+                <li><a href="{{ path('api_classes_get_item', {id:'magus', _format:'json'}) }}">Magus</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'oracle', _format:'json'}) }}">Oracle</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'summoner', _format:'json'}) }}">Summoner</a></li>
+                <li><a href="{{ path('api_classes_get_item', {id:'witch', _format:'json'}) }}">Witch</a></li>
+            </ul>
+        </div>
+    </div>
+{% endblock %}

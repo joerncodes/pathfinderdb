@@ -9,6 +9,29 @@
     <body>
     <div class="bg-primary">
         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="{{ path('index') }}">{{ projectname }}</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('classes') }}">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('magic') }}">Magic</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0" action="{{ path('api_spells_get_collection', {_format:'json'}) }}">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search for a spell" aria-label="Search" name="name">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
             <div class="col-12">
                 <div class="text-center m-0 vh-50 d-flex flex-column justify-content-center text-light">
                     <h1 class="text-light"><span>{{ projectname }}</span></h1>
