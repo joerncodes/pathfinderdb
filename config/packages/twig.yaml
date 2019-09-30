@@ -6,3 +6,8 @@ twig:
         projectname: '%projectname%'
         subtitle: 'API access to the rules of the Pathfinder RPG by Paizo.'
         paypallink: '%paypallink%'
+        githublink: '%githublink%'
+        changelog:
+            'Sept. 30, 2019':
+                - domain and spells added
+                - Changelog added 🎉

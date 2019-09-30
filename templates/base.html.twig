@@ -23,6 +23,12 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ path('magic') }}">Magic</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('contribute') }}">Contribute</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('changelog') }}">Changelog</a>
+                        </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0" action="{{ path('api_spells_get_collection', {_format:'json'}) }}">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search for a spell" aria-label="Search" name="name">

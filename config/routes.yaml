@@ -17,6 +17,14 @@ classes:
     maxAge:    86400
     sharedAge: 86400
 
+changelog:
+  path: /changelog
+  controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController
+  defaults:
+    template: 'static/changelog.html.twig'
+    maxAge:    86400
+    sharedAge: 86400
+
 magic:
   path: /magic
   controller: Symfony\Bundle\FrameworkBundle\Controller\TemplateController

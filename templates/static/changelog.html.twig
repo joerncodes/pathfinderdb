@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-12">
+            <h1>Changelog</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            {% for date, change in changelog %}
+                <h4>{{ date }}</h4>
+                <ul>
+                    {% for row in change %}
+                        <li>{{ row }}</li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}

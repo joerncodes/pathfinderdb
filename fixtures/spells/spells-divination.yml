@@ -7,6 +7,7 @@ App\Entity\Spell:
     spellRange: 60 ft.
     area: cone-shaped emanation
     duration: concentration, up to 1 min./level (D)
+    components: [V, S]
     savingThrow: none
     spellResistance: no
     description: <markdown(spells/detect-magic.md)>

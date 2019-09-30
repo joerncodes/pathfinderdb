@@ -30,6 +30,16 @@ App\Entity\SpellClassLevel:
     spell: "@detect-magic"
     characterclass: '@<current()>'
     level: 0
+  # psychic
+  flare-{bard, druid, magus, sorcerer, wizard}:
+    spell: '@flare'
+    characterClass: '@<current()>'
+    level: 0
+  #psychic
+  ghost-sound-{bard, magus, sorcerer, wizard):
+    spell: '@flare'
+    characterClass: '@<current()>'
+    level: 0
   #shocking-grasp-bloodrager:
     #spell: "@shocking-grasp"
     #characterClass: '@bloodrager'

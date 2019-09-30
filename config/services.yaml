@@ -6,9 +6,10 @@
 parameters:
   projectname: PathfinderDB
   paypallink: https://paypal.me/joern
+  githublink: https://github.com/joerncodes/pathfinderdb
   copyrightNotice:
     author: 'Jörn Meyer'
-    github: https://github.com/joerncodes/pathfinderdb
+    github: '%githublink%'
     notice: '%projectname% was coded by a single guy. If you find it helpful, please consider donating a buck or two!'
     support:
       paypal: '%paypallink%'

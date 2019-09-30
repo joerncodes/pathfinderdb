@@ -1,0 +1,14 @@
+App\Entity\Spell:
+  ghost-sound:
+    name: Ghost Sound
+    slug: ghost-sound
+    school: "@illu"
+    castingTime: 1 standard action
+    spellRange: close (25 ft. + 5 ft./2 levels)
+    components: [V, S, 'M (a bit of wool or a small lump of wax)']
+    duration: 1 round/level (D)
+    savingThrow: Will disbelief
+    spellResistance: no
+    description: <markdown(spells/ghost-sound.md)>
+    source: '@core-rulebook'
+
