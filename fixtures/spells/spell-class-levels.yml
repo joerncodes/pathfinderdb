@@ -1,5 +1,5 @@
 App\Entity\SpellClassLevel:
-  #fireball-blodrager-3:
+  #fireball-blodrager:
     #spell: "@fireball"
     #characterClass: '@bloodrager'
     #level: 1
@@ -15,3 +15,11 @@ App\Entity\SpellClassLevel:
     spell: "@cure-light-wounds"
     characterClass: '@ranger'
     level: 2
+  #shocking-grasp-bloodrager:
+    #spell: "@shocking-grasp"
+    #characterClass: '@bloodrager'
+    #level: 1
+  shocking-grasp-{magus, sorcerer, wizard}:
+    spell: "@shocking-grasp"
+    characterClass: '@<current()>'
+    level: 1

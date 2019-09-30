@@ -1,5 +1,11 @@
 App\Entity\SpellDomainLevel:
-  fireball-3:
+  fireball-level:
     spell: "@fireball"
-    domain: '@fire-domain'
+    domain: "@fire-domain"
     level: 3
+  #shocking-grasp{air, metal}:
+  shocking-grasp-level:
+    spell: "@shocking-grasp"
+    domain: "@air-domain"
+    level: 1
+

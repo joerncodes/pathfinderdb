@@ -13,3 +13,16 @@ App\Entity\Spell:
     components: [V,S,'M (a ball of bat guano and sulfur)']
     description: <markdown(spells/mage-armor.md)>
     source: "@core-rulebook"
+  shocking-grasp:
+    name: Shocking Grasp
+    slug: shocking-grasp
+    school: "@evoc"
+    castingTime: 1 standard action
+    spellRange: touch
+    subschool: Electricity
+    duration: instantaneous
+    savingThrow: none
+    spellResistance: yes
+    components: [V,S]
+    description: <markdown(spells/shocking-grasp.md)>
+    source: "@core-rulebook"
