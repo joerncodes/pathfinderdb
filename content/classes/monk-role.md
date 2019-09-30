@@ -1,0 +1,1 @@
+Monks excel at overcoming even the most daunting perils, striking where it’s least expected, and taking advantage of enemy vulnerabilities. Fleet of foot and skilled in combat, monks can navigate any battlefield with ease, aiding allies wherever they are needed most.

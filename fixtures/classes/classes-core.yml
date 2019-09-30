@@ -128,6 +128,31 @@ App\Entity\CharacterClass:
       - "@survival"
       - "@swim"
     source: "@core-rulebook"
+  monk:
+    name: Monk
+    slug: monk
+    description: <markdown(classes/monk.md)>
+    role: <markdown(classes/monk.md)>
+    hitDie: d8
+    alignment: Any lawful
+    skillRanksPerLevel: 4 + INT modifier
+    startingWealth: 1d6 × 10 gp (average 35 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
+    classSkills:
+      - '@acrobatics'
+      - '@climb'
+      - '@craft'
+      - '@escape-artist'
+      - '@intimidate'
+      - '@knowledge-history'
+      - '@knowledge-religion'
+      - '@perception'
+      - '@perform'
+      - '@profession'
+      - '@ride'
+      - '@sense-motive'
+      - '@stealth'
+      - '@swim'
+    source: "@core-rulebook"
   paladin:
     name: Paladin
     slug: paladin
@@ -135,7 +160,7 @@ App\Entity\CharacterClass:
     role: <markdown(classes/paladin-role.md)>
     hitDie: d10
     alignment: Lawful good
-    skillRanksPerLevel: 2 + INT modified
+    skillRanksPerLevel: 2 + INT modifier
     startingWealth: 5d6 × 10 gp (average 175 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@craft"
@@ -156,7 +181,7 @@ App\Entity\CharacterClass:
     role: <markdown(classes/ranger-role.md)>
     hitDie: d10
     alignment: Any
-    skillRanksPerLevel: 6 + INT modified
+    skillRanksPerLevel: 6 + INT modifier
     startingWealth: 5d6 × 10 gp (average 175 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@climb"
@@ -175,6 +200,38 @@ App\Entity\CharacterClass:
       - "@survival"
       - "@swim"
     source: "@core-rulebook"
+  rogue:
+    name: Rogue
+    slug: rogue
+    description: <markdown(classes/rogue.md)>
+    role: <markdown(classes/rogue-role.md)>
+    hitDie: d8
+    alignment: Any
+    skillRanksPerLevel: 8 + INT modifier
+    startingWealth: 4d6 × 10 gp (average 140 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
+    classSkills:
+      - '@acrobatics'
+      - '@appraise'
+      - '@bluff'
+      - '@climb'
+      - '@craft'
+      - '@diplomacy'
+      - '@disable-device'
+      - '@disguise'
+      - '@escape-artist'
+      - '@intimidate'
+      - '@knowledge-dungeoneering'
+      - '@knowledge-local'
+      - '@linguistics'
+      - '@perception'
+      - '@perform'
+      - '@profession'
+      - '@sense-motive'
+      - '@sleight-of-hand'
+      - '@stealth'
+      - '@swim'
+      - '@use-magic-device'
+    source: "@core-rulebook"
   sorcerer:
     name: Sorcerer
     slug: sorcerer
@@ -182,7 +239,7 @@ App\Entity\CharacterClass:
     role: <markdown(classes/sorcerer-role.md)>
     hitDie: d6
     alignment: Any
-    skillRanksPerLevel: 2 + INT modified
+    skillRanksPerLevel: 2 + INT modifier
     startingWealth: 2d6 × 10 gp (average 70 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@appraise"
@@ -202,7 +259,7 @@ App\Entity\CharacterClass:
     role: <markdown(classes/wizard-role.md)>
     hitDie: d6
     alignment: Any
-    skillRanksPerLevel: 2 + INT modified
+    skillRanksPerLevel: 2 + INT modifier
     startingWealth: 2d6 × 10 gp (average 70 gp.) In addition, each character begins play with an outfit worth 10 gp or less.
     classSkills:
       - "@appraise"
