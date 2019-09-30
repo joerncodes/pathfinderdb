@@ -2,6 +2,8 @@ App\Entity\CharacterClass:
   barbarian:
     name: Barbarian
     slug: barbarian
+    description: <markdown(classes/alchemist.md)>
+    role: <markdown(classes/alchemist-role.md)>
     hitDie: d12
     alignment: Any non-lawful
     skillRanksPerLevel: 4 + INT modifier
@@ -21,6 +23,8 @@ App\Entity\CharacterClass:
   bard:
     name: Bard
     slug: bard
+    description: <markdown(classes/bard.md)>
+    role: <markdown(classes/bard-role.md)>
     hitDie: d8
     alignment: Any
     skillRanksPerLevel: 6 + INT modifier
@@ -58,6 +62,8 @@ App\Entity\CharacterClass:
   cleric:
     name: Cleric
     slug: cleric
+    description: <markdown(classes/cleric.md)>
+    role: <markdown(classes/cleric-role.md)>
     hitDie: d8
     alignment: A cleric's alignment must be within one step of her deity's, along either the law/chaos axis or the good/evil axis.
     skillRanksPerLevel: 2 + INT modifier
@@ -80,6 +86,8 @@ App\Entity\CharacterClass:
   druid:
     name: Druid
     slug: druid
+    description: <markdown(classes/druid.md)>
+    role: <markdown(classes/druid-role.md)>
     hitDie: d8
     alignment: Any neutral
     skillRanksPerLevel: 4 + INT modifier
@@ -102,6 +110,8 @@ App\Entity\CharacterClass:
   fighter:
     name: Fighter
     slug: fighter
+    description: <markdown(classes/fighter.md)>
+    role: <markdown(classes/fighter-role.md)>
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 2 + INT modifier
@@ -121,6 +131,8 @@ App\Entity\CharacterClass:
   paladin:
     name: Paladin
     slug: paladin
+    description: <markdown(classes/paladin.md)>
+    role: <markdown(classes/paladin-role.md)>
     hitDie: d10
     alignment: Lawful good
     skillRanksPerLevel: 2 + INT modified
@@ -140,6 +152,8 @@ App\Entity\CharacterClass:
   ranger:
     name: Ranger
     slug: ranger
+    description: <markdown(classes/ranger.md)>
+    role: <markdown(classes/ranger-role.md)>
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 6 + INT modified
@@ -164,6 +178,8 @@ App\Entity\CharacterClass:
   sorcerer:
     name: Sorcerer
     slug: sorcerer
+    description: <markdown(classes/sorcerer.md)>
+    role: <markdown(classes/sorcerer-role.md)>
     hitDie: d6
     alignment: Any
     skillRanksPerLevel: 2 + INT modified
@@ -182,6 +198,8 @@ App\Entity\CharacterClass:
   wizard:
     name: Wizard
     slug: wizard
+    description: <markdown(classes/wizard.md)>
+    role: <markdown(classes/wizard-role.md)>
     hitDie: d6
     alignment: Any
     skillRanksPerLevel: 2 + INT modified

@@ -64,6 +64,18 @@ class CharacterClass extends ApiBase
      */
     private $startingWealth;
 
+    /**
+     * @ORM\Column(type="text")
+     * @Groups("read")
+     */
+    private $description;
+
+    /**
+     * @ORM\Column(type="text")
+     * @Groups("read")
+     */
+    private $role;
+
     public function __construct()
     {
         $this->classSkills = new ArrayCollection();
@@ -214,6 +226,30 @@ class CharacterClass extends ApiBase
     public function setStartingWealth(string $startingWealth): self
     {
         $this->startingWealth = $startingWealth;
+
+        return $this;
+    }
+
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    public function setDescription(string $description): self
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    public function getRole(): ?string
+    {
+        return $this->role;
+    }
+
+    public function setRole(string $role): self
+    {
+        $this->role = $role;
 
         return $this;
     }

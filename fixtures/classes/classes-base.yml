@@ -6,6 +6,8 @@ App\Entity\CharacterClass:
     alignment: Any
     skillRanksPerLevel: 4 + INT modifier
     startingWealth: 3d6 × 10 gp (average 105gp.) In addition, each character begins play with an outfit worth 10 gp or less.
+    description: <markdown(classes/alchemist.md)>
+    role: <markdown(classes/alchemist-role.md)>
     classSkills:
       - "@appraise"
       - "@craft"
@@ -24,6 +26,8 @@ App\Entity\CharacterClass:
   cavalier:
     name: Cavalier
     slug: cavalier
+    description: <markdown(classes/cavalier.md)>
+    role: <markdown(classes/cavalier-role.md)>
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 4 + INT modifier
@@ -43,6 +47,8 @@ App\Entity\CharacterClass:
   gunslinger:
     name: Gunslinger
     slug: gunslinger
+    description: <markdown(classes/gunslinger.md)>
+    role: <markdown(classes/gunslinger-role.md)>
     hitDie: d10
     alignment: Any
     skillRanksPerLevel: 4 + INT modifier
@@ -67,6 +73,8 @@ App\Entity\CharacterClass:
   inquisitor:
     name: Inquisitor
     slug: inquisitor
+    description: <markdown(classes/inquisitor.md)>
+    role: <markdown(classes/inquisitor-role.md)>
     hitDie: d8
     alignment: "An inquisitor’s alignment must be within one step of her deity’s, along either the law/chaos axis or the good/evil axis."
     skillRanksPerLevel: 6 + INT modifier
@@ -96,6 +104,8 @@ App\Entity\CharacterClass:
   magus:
     name: Magus
     slug: magus
+    description: <markdown(classes/magus.md)>
+    role: <markdown(classes/magus-role.md)>
     hitDie: d8
     alignment: Any
     skillRanksPerLevel: 2 + INT modifier
@@ -117,6 +127,8 @@ App\Entity\CharacterClass:
   oracle:
     name: Oracle
     slug: oracle
+    description: <markdown(classes/oracle.md)>
+    role: <markdown(classes/oracle-role.md)>
     hitDie: d8
     alignment: Any
     skillRanksPerLevel: 4 + INT modifier
@@ -135,6 +147,8 @@ App\Entity\CharacterClass:
   summoner:
     name: Summoner
     slug: summoner
+    description: <markdown(classes/summoner.md)>
+    role: <markdown(classes/summoner-role.md)>
     hitDie: d8
     alignment: Any
     skillRanksPerLevel: 2 + INT modifier
@@ -162,6 +176,8 @@ App\Entity\CharacterClass:
   witch:
     name: Witch
     slug: witch
+    description: <markdown(classes/witch.md)>
+    role: <markdown(classes/witch-role.md)>
     hitDie: d6
     alignment: Any
     skillRanksPerLevel: 2 + INT modified

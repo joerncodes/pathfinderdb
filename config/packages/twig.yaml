@@ -9,5 +9,6 @@ twig:
         githublink: '%githublink%'
         changelog:
             'Sept. 30, 2019':
-                - domain and spells added
-                - Changelog added 🎉
+                - '`description` and `role` added for classes'
+                - '`domain` and domain spells added'
+                - 'Changelog added 🎉'

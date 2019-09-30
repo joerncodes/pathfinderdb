@@ -12,7 +12,7 @@
                 <h4>{{ date }}</h4>
                 <ul>
                     {% for row in change %}
-                        <li>{{ row }}</li>
+                        <li>{{ row|markdown }}</li>
                     {% endfor %}
                 </ul>
             {% endfor %}
