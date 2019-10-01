@@ -1,0 +1,1 @@
+At 19th level, a fighter gains damage reduction 5/— whenever he is wearing armor or using a shield.

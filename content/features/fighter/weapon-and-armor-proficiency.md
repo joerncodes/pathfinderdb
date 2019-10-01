@@ -1,0 +1,1 @@
+A fighter is proficient with all simple and martial weapons and with all armor (heavy, light, and medium) and shields (including tower shields).

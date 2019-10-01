@@ -249,3 +249,38 @@ App\Entity\CharacterClassFeature:
     slug: cleric-cloud-of-smoke
     featureType: Su
     description: <markdown(features/cleric/cloud-of-smoke.md)>
+  fighter-weapon-and-armor-proficiency:
+    name: Weapon and Armor Proficiency
+    slug: fighter-weapon-and-armor-proficiency
+    featureType: null
+    description: <markdown(features/fighter/weapon-and-armor-proficiency.md)>
+  fighter-bonus-feat:
+    name: Bonus Feat
+    slug: fighter-bonus-feat
+    featureType: null
+    description: <markdown(features/fighter/bonus-feat.md)>
+  fighter-bravery:
+    name: Bravery
+    slug: fighter-bravery
+    featureType: Ex
+    description: <markdown(features/fighter/bravery.md)>
+  fighter-armor-training:
+    name: Armor Training
+    slug: fighter-armor-training
+    featureType: Ex
+    description: <markdown(features/fighter/armor-training.md)>
+  fighter-weapon-training:
+    name: Weapon Training
+    slug: fighter-weapon-training
+    featureType: Ex
+    description: <markdown(features/fighter/weapon-training.md)>
+  fighter-armor-mastery:
+    name: Armor Mastery
+    slug: fighter-armor-mastery
+    featureType: Ex
+    description: <markdown(features/fighter/armor-mastery.md)>
+  fighter-weapon-mastery:
+    name: Weapon Mastery
+    slug: fighter-weapon-mastery
+    featureType: Ex
+    description: <markdown(features/fighter/weapon-mastery.md)>

@@ -8,7 +8,9 @@ twig:
         paypallink: '%paypallink%'
         githublink: '%githublink%'
         changelog:
-            'Sept. 30, 2019':
+            'Oct. 1 2019':
+                - 'Fighter class advancements added ⚔️'
+            'Sept. 30 2019':
                 - 'Changelog added 🎉'
                 - '`domain` and domain spells added'
                 - '`description` and `role` added for classes'

@@ -1,0 +1,161 @@
+App\Entity\CharacterClassAdvancement:
+  fighter-1:
+    characterClass: "@fighter"
+    level: 1
+    baseAttackBonus: "+1"
+    fortitudeSave: 2
+    reflexSave: 0
+    willSave: 0
+    feature: ["@fighter-bonus-feat","@fighter-weapon-and-armor-proficiency"]
+  fighter-2:
+    characterClass: "@fighter"
+    level: 2
+    baseAttackBonus: "+2"
+    fortitudeSave: 3
+    reflexSave: 0
+    willSave: 0
+    feature: ["@fighter-bonus-feat", "@fighter-bravery"]
+  fighter-3:
+    characterClass: "@fighter"
+    level: 3
+    baseAttackBonus: "+3"
+    fortitudeSave: 3
+    reflexSave: 1
+    willSave: 1
+    feature: ["@fighter-armor-training"]
+  fighter-4:
+    characterClass: "@fighter"
+    level: 4
+    baseAttackBonus: "+4"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 1
+    feature: ["@fighter-bonus-feat"]
+  fighter-5:
+    characterClass: "@fighter"
+    level: 5
+    baseAttackBonus: "+5"
+    fortitudeSave: 4
+    reflexSave: 1
+    willSave: 1
+    feature: ["@fighter-weapon-training"]
+  fighter-6:
+    characterClass: "@fighter"
+    level: 6
+    baseAttackBonus: "+6/+1"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 2
+    feature: ["@fighter-bonus-feat","@fighter-bravery"]
+  fighter-7:
+    characterClass: "@fighter"
+    level: 7
+    baseAttackBonus: "+7/+2"
+    fortitudeSave: 5
+    reflexSave: 2
+    willSave: 2
+    feature: ["@fighter-armor-training"]
+  fighter-8:
+    characterClass: "@fighter"
+    level: 8
+    baseAttackBonus: "+8/+3"
+    fortitudeSave: 6
+    reflexSave: 2
+    willSave: 2
+    feature: ["@fighter-bonus-feat"]
+  fighter-9:
+    characterClass: "@fighter"
+    level: 9
+    baseAttackBonus: "+9/+4"
+    fortitudeSave: 6
+    reflexSave: 3
+    willSave: 3
+    feature: ["@fighter-weapon-training"]
+  fighter-10:
+    characterClass: "@fighter"
+    level: 10
+    baseAttackBonus: "+10/+5"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 3
+    feature: ["@fighter-bonus-feat","@fighter-bravery"]
+  fighter-11:
+    characterClass: "@fighter"
+    level: 11
+    baseAttackBonus: "+11/+6/+1"
+    fortitudeSave: 7
+    reflexSave: 3
+    willSave: 3
+    feature: ["@fighter-armor-training"]
+  fighter-12:
+    characterClass: "@fighter"
+    level: 12
+    baseAttackBonus: "+12/+7/+2"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 4
+    feature: ["@fighter-bonus-feat"]
+  fighter-13:
+    characterClass: "@fighter"
+    level: 13
+    baseAttackBonus: "+13/+8/+3"
+    fortitudeSave: 8
+    reflexSave: 4
+    willSave: 4
+    feature: ["@fighter-weapon-training"]
+  fighter-14:
+    characterClass: "@fighter"
+    level: 14
+    baseAttackBonus: "+14/+9/+4"
+    fortitudeSave: 9
+    reflexSave: 4
+    willSave: 4
+    feature: ["@fighter-bonus-feat","@fighter-bravery"]
+  fighter-15:
+    characterClass: "@fighter"
+    level: 15
+    baseAttackBonus: "+15/+10/+5"
+    fortitudeSave: 9
+    reflexSave: 5
+    willSave: 5
+    feature: ["@fighter-armor-training"]
+  fighter-16:
+    characterClass: "@fighter"
+    level: 16
+    baseAttackBonus: "+16/+11/+6/+1"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 5
+    feature: ["@fighter-bonus-feat"]
+  fighter-17:
+    characterClass: "@fighter"
+    level: 17
+    baseAttackBonus: "+17/+12/+7/+2"
+    fortitudeSave: 10
+    reflexSave: 5
+    willSave: 5
+    feature: ["@fighter-weapon-training"]
+  fighter-18:
+    characterClass: "@fighter"
+    level: 18
+    baseAttackBonus: "+18/+13/+8/+3"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 6
+    feature: ["@fighter-bonus-feat","@fighter-bravery"]
+  fighter-19:
+    characterClass: "@fighter"
+    level: 19
+    baseAttackBonus: "+19/+14/+9/+4"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 6
+    feature: ["@fighter-armor-mastery"]
+  fighter-20:
+    characterClass: "@fighter"
+    level: 20
+    baseAttackBonus: "+20/+15/+10/+5"
+    fortitudeSave: 11
+    reflexSave: 6
+    willSave: 6
+    feature: ["@fighter-bonus-feat","@fighter-weapon-mastery"]
