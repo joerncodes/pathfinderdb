@@ -43,6 +43,9 @@ abstract class Base implements SorterInterface
     {
         $sorted = new \stdClass();
         foreach ($this->getSortedKeys() as $key) {
+            if(!isset($object->$key)) {
+                continue;
+            }
             $sorted->$key = $this->childSort($key, $object->$key) ?? $object->$key;
         }
 

@@ -18,7 +18,7 @@ abstract class ApiBase
 
     /**
      * @ORM\Column(type="string", length=100)
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     protected $name;
 
@@ -30,7 +30,7 @@ abstract class ApiBase
 
     /**
      * @ApiProperty()
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     public function getType()
     {

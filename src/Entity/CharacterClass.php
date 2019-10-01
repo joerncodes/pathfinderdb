@@ -13,7 +13,14 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ApiResource(
  *     collectionOperations={"get"={"method"="GET"}},
- *     itemOperations={"get"={"method"="GET"}},
+ *     itemOperations={
+ *          "get"={"method"="GET"},
+ *          "get-base"={
+ *              "method"="GET",
+ *              "normalization_context"={"groups"={"read-base"}},
+ *              "path"=" /classes/short/{id}.{_format}"
+ *          }
+ *     },
  *     normalizationContext={"groups"={"read"}},
  *     denormalizationContext={"groups"={"write"}},
  *     shortName="class"
@@ -26,24 +33,25 @@ class CharacterClass extends ApiBase
 
     /**
      * @ORM\Column(type="string", length=10)
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     private $hitDie;
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     private $alignment;
 
     /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Skill")
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     private $classSkills;
 
     /**
      * @ORM\Column(type="string", length=100)
+     * @Groups({"read", "read-base"})
      */
     private $skillRanksPerLevel;
 
@@ -60,7 +68,7 @@ class CharacterClass extends ApiBase
 
     /**
      * @ORM\Column(type="string", length=255)
-     * @Groups("read")
+     * @Groups({"read", "read-base"})
      */
     private $startingWealth;
 

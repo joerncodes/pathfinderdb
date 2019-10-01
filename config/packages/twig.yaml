@@ -11,6 +11,7 @@ twig:
             'Oct. 1 2019':
                 - 'Fighter class advancements added ⚔️'
                 - '`spellsKnown` property added to character advancements'
+                - '`/api/classes/short/{id}.(json,jsonld)` endpoint added'
             'Sept. 30 2019':
                 - 'Changelog added 🎉'
                 - '`domain` and domain spells added'
