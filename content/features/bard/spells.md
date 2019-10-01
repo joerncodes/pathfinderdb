@@ -8,29 +8,3 @@ Upon reaching 5th level, and at every third bard level after that (8th, 11th, an
 
 A bard need not prepare his spells in advance. He can cast any spell he knows at any time, assuming he has not yet used up his allotment of spells per day for the spell’s level.
 
-----
-
-**Table: Bard Spells Known**
-
-| Level | 0th | 1st | 2nd | 3rd | 4th | 5th | 6th |
-|-------|-----|-----|-----|-----|-----|-----|-----|
-|1|4|2|-|-|-|-|-|
-|2|5|3|-|-|-|-|-|
-|3|6|4|-|-|-|-|-|
-|4|6|4|2|-|-|-|-|
-|5|6|4|3|-|-|-|-|
-|6|6|4|4|-|-|-|-|
-|7|6|5|4|2|-|-|-|
-|8|6|5|4|3|-|-|-|
-|9|6|5|4|4|-|-|-|
-|10|6|5|5|4|2|-|-|
-|11|6|6|5|4|3|-|-|
-|12|6|6|5|4|4|-|-|
-|13|6|6|5|5|4|2|-|
-|14|6|6|6|5|4|3|-|
-|15|6|6|6|5|4|4|-|
-|16|6|6|6|5|5|4|2|
-|17|6|6|6|6|5|4|3|
-|18|6|6|6|6|5|4|4|
-|19|6|6|6|6|5|4|4|
-|20|6|6|6|6|6|5|5|

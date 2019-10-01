@@ -7,6 +7,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 2
     willSave: 2
     spellsPerDay: { "1st": 1 }
+    spellsKnown: { "0th": 4, "1st": 2 }
     feature: ["@bard-bardic-knowledge","@bard-bardic-performance","@bard-cantrips","@bard-countersong","@bard-distraction", "@bard-fascinate", "@bard-inspire-courage", "@bard-spells","@bard-weapon-and-armor-proficiency"]
   bard-2:
     characterClass: "@bard"
@@ -16,6 +17,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 3
     willSave: 3
     spellsPerDay: { "1st": 2 }
+    spellsKnown: { "0th": 5, "1st": 3 }
     feature: ["@bard-versatile-performance","@bard-well-versed"]
   bard-3:
     characterClass: "@bard"
@@ -25,6 +27,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 3
     willSave: 3
     spellsPerDay: { "1st": 3 }
+    spellsKnown: { "0th": 6, "1st": 4 }
     feature: ["@bard-inspire-competence"]
   bard-4:
     characterClass: "@bard"
@@ -34,6 +37,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 4
     willSave: 4
     spellsPerDay: { "1st": 3, "2nd": 1 }
+    spellsKnown: { "0th": 6, "1st": 4, "2nd": 2 }
   bard-5:
     characterClass: "@bard"
     level: 5
@@ -43,6 +47,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 4
     feature: ["@bard-inspire-courage","@bard-lore-master"]
     spellsPerDay: { "1st": 4, "2nd": 2 }
+    spellsKnown: { "0th": 6, "1st": 4, "2nd": 3 }
   bard-6:
     characterClass: "@bard"
     level: 6
@@ -52,6 +57,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 5
     feature: ["@bard-suggestion","@bard-versatile-performance"]
     spellsPerDay: { "1st": 4, "2nd": 3 }
+    spellsKnown: { "0th": 6, "1st": 4, "2nd": 4 }
   bard-7:
     characterClass: "@bard"
     level: 7
@@ -61,6 +67,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 5
     feature: ["@bard-inspire-competence"]
     spellsPerDay: { "1st": 4, "2nd": 3, "3rd": 1 }
+    spellsKnown: { "0th": 6, "1st": 5, "2nd": 4, "3rd": 2 }
   bard-8:
     characterClass: "@bard"
     level: 8
@@ -70,6 +77,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 6
     feature: ["@bard-dirge-of-doom"]
     spellsPerDay: { "1st": 4, "2nd": 4, "3rd": 2 }
+    spellsKnown: { "0th": 6, "1st": 5, "2nd": 4, "3rd": 3 }
   bard-9:
     characterClass: "@bard"
     level: 9
@@ -79,6 +87,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 6
     feature: ["@bard-inspire-greatness"]
     spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 3 }
+    spellsKnown: { "0th": 6, "1st": 5, "2nd": 4, "3rd": 4 }
   bard-10:
     characterClass: "@bard"
     level: 10
@@ -88,6 +97,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 7
     feature: ["@bard-jack-of-all-trades", "@bard-versatile-performance"]
     spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 3, "4th": 1 }
+    spellsKnown: { "0th": 6, "1st": 5, "2nd": 5, "3rd": 4, "4th": 2 }
   bard-11:
     characterClass: "@bard"
     level: 11
@@ -97,6 +107,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 7
     feature: ["@bard-inspire-competence","@bard-inspire-courage","@bard-lore-master"]
     spellsPerDay: { "1st": 5, "2nd": 4, "3rd": 4, "4th": 2 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 5, "3rd": 4, "4th": 3 }
   bard-12:
     characterClass: "@bard"
     level: 12
@@ -106,6 +117,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 8
     feature: ["@bard-soothing-performance"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 3 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 5, "3rd": 4, "4th": 4 }
   bard-13:
     characterClass: "@bard"
     level: 13
@@ -114,6 +126,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 8
     willSave: 8
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 3, "5th": 1 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 5, "3rd": 5, "4th": 4, "5th": 2 }
   bard-14:
     characterClass: "@bard"
     level: 14
@@ -123,6 +136,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 9
     feature: ["@bard-frightening-tune","@bard-versatile-performance"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 4, "4th": 4, "5th": 2 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 5, "3rd": 5, "4th": 4, "5th": 3 }
   bard-15:
     characterClass: "@bard"
     level: 15
@@ -132,6 +146,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 9
     feature: ["@bard-inspire-competence","@bard-inspire-heroics"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 3 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 5, "3rd": 5, "4th": 4, "5th": 4 }
   bard-16:
     characterClass: "@bard"
     level: 16
@@ -140,6 +155,7 @@ App\Entity\CharacterClassAdvancement:
     reflexSave: 10
     willSave: 10
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 3, "6th": 1 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 6, "3rd": 5, "4th": 5, "5th": 4, "6th": 2 }
   bard-17:
     characterClass: "@bard"
     level: 17
@@ -149,6 +165,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 10
     feature: ["@bard-inspire-courage","@bard-lore-master"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 4, "5th": 4, "6th": 2 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 6, "3rd": 6, "4th": 5, "5th": 4, "6th": 3 }
   bard-18:
     characterClass: "@bard"
     level: 18
@@ -158,6 +175,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 11
     feature: ["@bard-mass-suggestion","@bard-versatile-performance"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 4, "6th": 3 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 6, "3rd": 6, "4th": 5, "5th": 4, "6th": 4 }
   bard-19:
     characterClass: "@bard"
     level: 19
@@ -167,6 +185,7 @@ App\Entity\CharacterClassAdvancement:
     willSave: 11
     feature: ["@bard-inspire-competence"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 5, "6th": 4 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 6, "3rd": 6, "4th": 5, "5th": 4, "6th": 4 }
   bard-20:
     characterClass: "@bard"
     level: 20
@@ -176,3 +195,4 @@ App\Entity\CharacterClassAdvancement:
     willSave: 12
     feature: ["@bard-deadly-performance"]
     spellsPerDay: { "1st": 5, "2nd": 5, "3rd": 5, "4th": 5, "5th": 5, "6th": 5 }
+    spellsKnown: { "0th": 6, "1st": 6, "2nd": 6, "3rd": 6, "4th": 6, "5th": 5, "6th": 5 }

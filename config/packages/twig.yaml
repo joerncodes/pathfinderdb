@@ -10,6 +10,7 @@ twig:
         changelog:
             'Oct. 1 2019':
                 - 'Fighter class advancements added ⚔️'
+                - '`spellsKnown` property added to character advancements'
             'Sept. 30 2019':
                 - 'Changelog added 🎉'
                 - '`domain` and domain spells added'

@@ -18,6 +18,7 @@ final class CharacterClassAdvancement extends Base
             'reflexSave',
             'willSave',
             'spellsPerDay',
+            'spellsKnown',
             'feature',
         ];
     }
