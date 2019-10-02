@@ -1,0 +1,1 @@
+Starting at 4th level, a druid gains a +4 bonus on saving throws against the spell-like and supernatural abilities of fey. This bonus also applies to spells and effects that target plants, such as blight, entangle, spike growth, and warp wood.

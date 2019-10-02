@@ -48,6 +48,10 @@ class CopyrightRespondListener implements EventSubscriberInterface
         {
             return $event;
         }
+        if(is_array($decodedResult))
+        {
+            return $event;
+        }
         $decodedResult->copyright = $this->copyrightNotice;
         $result = json_encode($decodedResult);
 

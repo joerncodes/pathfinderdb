@@ -9,6 +9,7 @@ use Symfony\Component\Serializer\Annotation\Groups;
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CharacterClassFeatureRepository")
  * @ApiResource(
+ *     shortName="feature",
  *     collectionOperations={"get"={"method"="GET"}},
  *     itemOperations={"get"={"method"="GET"}},
  *     normalizationContext={"groups"={"read"}},

@@ -1,0 +1,1 @@
+At 13th level, a druid gains the ability to change her appearance at will, as if using the alter self spell, but only while in her normal form.

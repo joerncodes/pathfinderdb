@@ -1,0 +1,1 @@
+At 9th level, a druid gains immunity to all poisons.

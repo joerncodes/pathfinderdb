@@ -289,6 +289,36 @@ App\Entity\CharacterClassFeature:
     slug: druid-spontaneous-casting
     featureType: null
     description: <markdown(features/druid/spontaneous-casting.md)>
+  druid-trackless-step:
+    name: Trackless Step
+    slug: druid-trackless-step
+    featureType: Ex
+    description: <markdown(features/druid/trackless-step.md)>
+  druid-resist-natures-lure:
+    name: Resist Nature's Lore
+    slug: druid-resist-natures-lure
+    featureType: Ex
+    description: <markdown(features/druid/resist-natures-lure.md)>
+  druid-wild-shape:
+    name: Wild Shape
+    slug: druid-wild-shape
+    featureType: Su
+    description: <markdown(features/druid/wild-shape.md)>
+  druid-venom-immunity:
+    name: Venom Immunity
+    slug: venom-immunity
+    featureType: Ex
+    description: <markdown(features/druid/venom-immunity.md)>
+  druid-a-thousand-faces:
+    name: A Thousand Faces
+    slug: druid-a-thousand-faces
+    featureType: Su
+    description: <markdown(features/druid/a-thousand-faces.md)>
+  druid-timeless-body:
+    name: Timeless Body
+    slug: druid-timeless-body
+    featureType: Ex
+    description: <markdown(features/druid/timeless-body.md)>
   fighter-weapon-and-armor-proficiency:
     name: Weapon and Armor Proficiency
     slug: fighter-weapon-and-armor-proficiency

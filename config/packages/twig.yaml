@@ -8,6 +8,8 @@ twig:
         paypallink: '%paypallink%'
         githublink: '%githublink%'
         changelog:
+            'Oct. 2 2019':
+                - 'Druid class advancements added 🐻'
             'Oct. 1 2019':
                 - 'Fighter class advancements added ⚔️'
                 - '`spellsKnown` property added to character advancements'
