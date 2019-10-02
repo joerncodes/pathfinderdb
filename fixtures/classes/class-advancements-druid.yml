@@ -1,0 +1,20 @@
+App\Entity\CharacterClassAdvancement:
+  druid-1:
+    characterClass: "@druid"
+    level: 1
+    baseAttackBonus: "+0"
+    fortitudeSave: 2
+    reflexSave: 0
+    willSave: 2
+    spellsPerDay: { "0th": "3", "1th": "1"}
+    feature: ["@druid-weapon-and-armor-proficiency","@druid-spells","@druid-spontaneous-casting","@druid-nature-bond","@druid-nature-sense","@druid-orisons","@druid-wild-empathy"]
+  druid-2:
+    characterClass: "@druid"
+    level: 2
+    baseAttackBonus: "+1"
+    fortitudeSave: 3
+    reflexSave: 0
+    willSave: 3
+    spellsPerDay: { "0th": "4", "1th": "2"}
+    feature: ["@druid-woodland-stride"]
+

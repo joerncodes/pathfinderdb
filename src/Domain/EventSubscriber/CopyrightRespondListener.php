@@ -44,7 +44,7 @@ class CopyrightRespondListener implements EventSubscriberInterface
     public function addCopyRight(ViewEvent $event)
     {
         $result = $event->getControllerResult();
-        if(!is_object($result) || !$decodedResult = json_decode($result))
+        if(!$result || !$decodedResult = json_decode($result))
         {
             return $event;
         }

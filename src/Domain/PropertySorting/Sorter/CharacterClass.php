@@ -17,6 +17,7 @@ final class CharacterClass extends Base
             'hitDie',
             'alignment',
             'startingWealth',
+            'skillRanksPerLevel',
             'classSkills',
             'advancement',
             'description',

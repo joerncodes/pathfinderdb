@@ -1,0 +1,1 @@
+Druids can prepare a number of orisons, or 0-level spells, each day, as noted under “Spells per Day.” These spells are cast like any other spell, but they are not expended when cast and may be used again.

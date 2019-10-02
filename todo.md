@@ -13,6 +13,7 @@
 ## Content
 
 - [X] markdown import on fixture loading
+- [ ] check bonus languages
 - [ ] Affiliate links for sources
 - [ ] Full core classes
     - [X] base info

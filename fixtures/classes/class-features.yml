@@ -249,6 +249,46 @@ App\Entity\CharacterClassFeature:
     slug: cleric-cloud-of-smoke
     featureType: Su
     description: <markdown(features/cleric/cloud-of-smoke.md)>
+  druid-nature-bond:
+    name: Nature Bond
+    slug: druid-nature-bond
+    featureType: Ex
+    description: <markdown(features/druid/nature-bond.md)>
+  druid-wild-empathy:
+    name: Wild Empathy
+    slug: druid-wild-empathy
+    featureType: Ex
+    description: <markdown(features/druid/wild-empathy.md)>
+  druid-nature-sense:
+    name: Nature Sense
+    slug: druid-nature-sense
+    featureType: Ex
+    description: <markdown(features/druid/nature-sense.md)>
+  druid-orisons:
+    name: Orisons
+    slug: druid-orisons
+    featureType: Sp
+    description: <markdown(features/druid/orisons.md)>
+  druid-weapon-and-armor-proficiency:
+    name: Weapon and Armor Proficiency
+    slug: druid-weapon-and-armor-proficiency
+    featureType: null
+    description: <markdown(features/druid/weapon-and-armor-proficiency.md)>
+  druid-spells:
+    name: Spells
+    slug: druid-spells
+    featureType: null
+    description: <markdown(features/druid/spells.md)>
+  druid-woodland-stride:
+    name: Woodland Stride
+    slug: druid-woodland-stride
+    featureType: Ex
+    description: <markdown(features/druid/woodland-stride.md)>
+  druid-spontaneous-casting:
+    name: Spontaneous Casting
+    slug: druid-spontaneous-casting
+    featureType: null
+    description: <markdown(features/druid/spontaneous-casting.md)>
   fighter-weapon-and-armor-proficiency:
     name: Weapon and Armor Proficiency
     slug: fighter-weapon-and-armor-proficiency

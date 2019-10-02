@@ -1,0 +1,1 @@
+A druid gains a +2 bonus on Knowledge (nature) and Survival checks.

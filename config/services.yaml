@@ -8,7 +8,7 @@ parameters:
   paypallink: https://paypal.me/joern
   githublink: https://github.com/joerncodes/pathfinderdb
   copyrightNotice:
-    author: 'Jörn Meyer'
+    author: '%projectname% 2019 © by Jörn Meyer'
     github: '%githublink%'
     notice: '%projectname% was coded by a single guy. If you find it helpful, please consider donating a buck or two!'
     support:

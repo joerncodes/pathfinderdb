@@ -1,0 +1,1 @@
+A druid can channel stored spell energy into summoning spells that she hasn’t prepared ahead of time. She can “lose” a prepared spell in order to cast any summon nature’s ally spell of the same level or lower.
