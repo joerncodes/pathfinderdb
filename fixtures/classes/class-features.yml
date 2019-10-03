@@ -354,3 +354,18 @@ App\Entity\CharacterClassFeature:
     slug: fighter-weapon-mastery
     featureType: Ex
     description: <markdown(features/fighter/weapon-mastery.md)>
+  paladin-aura-of-good:
+    name: Aura of Good
+    slug: paladin-aura-of-good
+    featureType: Ex
+    description: <markdown(features/paladin/aura-of-good.md)>
+  paladin-detect-evil:
+    name: Detect Evil
+    slug: paladin-detect-evil
+    featureType: Sp
+    description: <markdown(features/paladin/detect-evil.md)>
+  paladin-smite-evil:
+    name: Smite Evil
+    slug: paladin-smite-evil
+    featureType: Sp
+    description: <markdown(features/paladin/smite-evil.md)>

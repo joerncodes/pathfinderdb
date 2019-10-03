@@ -70,4 +70,9 @@ class CharacterClassFeature extends ApiBase
 
         return $this;
     }
+
+    public function getApplicablePropertyNames(): array
+    {
+        return ['description'];
+    }
 }

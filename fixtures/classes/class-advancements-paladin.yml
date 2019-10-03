@@ -1,0 +1,9 @@
+App\Entity\CharacterClassAdvancement:
+  paladin-1:
+    characterClass: "@paladin"
+    level: 1
+    baseAttackBonus: "+1"
+    fortitudeSave: 2
+    reflexSave: 0
+    willSave: 2
+    feature: ["@paladin-aura-of-good","@paladin-detect-evil","@paladin-smite-evil"]
