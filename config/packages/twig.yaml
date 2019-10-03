@@ -8,6 +8,8 @@ twig:
         paypallink: '%paypallink%'
         githublink: '%githublink%'
         changelog:
+            'Oct. 3 2019':
+                - '`Conditions` added'
             'Oct. 2 2019':
                 - 'Druid class advancements added 🐻'
             'Oct. 1 2019':

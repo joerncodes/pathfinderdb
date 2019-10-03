@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Domain\PropertySorting;
+namespace App\Domain\PropertySorting\Sorting;
 
 final class Source extends Base
 {

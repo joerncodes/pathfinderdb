@@ -2,31 +2,27 @@
 
 namespace App\Domain\PropertySorting\Sorter;
 
-class Spell extends Base
+final class Spell extends Base
 {
+    public function getType(): string
+    {
+        return 'spell';
+    }
+
     protected function getSortedKeys(): array
     {
         return [
             'name',
             'school',
             'subschool',
-            'components',
             'target',
             'castingTime',
+            'components',
             'range',
-            'duration',
-            'area',
-            'savingThrow',
-            'spellResistance',
             'description',
             'levels',
-            'domains',
             'source',
+            'type'
         ];
-    }
-
-    public function getType(): string
-    {
-        return 'spell';
     }
 }

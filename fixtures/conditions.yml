@@ -1,0 +1,137 @@
+App\Entity\Condition:
+  bleed:
+    name: Bleed
+    slug: bleed
+    description: <markdown(conditions/bleed.md)>
+  blinded:
+    name: Blinded
+    slug: blinded
+    description: <markdown(conditions/blinded.md)>
+  broken:
+    name: Broken
+    slug: broken
+    description: <markdown(conditions/broken.md)>
+  confused:
+    name: Confused
+    slug: confused
+    description: <markdown(conditions/confused.md)>
+  cowering:
+    name: Cowering
+    slug: cowering
+    description: <markdown(conditions/cowering.md)>
+  dazed:
+    name: Dazed
+    slug: dazed
+    description: <markdown(conditions/dazed.md)>
+  dazzled:
+    name: Dazzled
+    slug: dazzled
+    description: <markdown(conditions/dazzled.md)>
+  dead:
+    name: Dead
+    slug: dead
+    description: <markdown(conditions/dead.md)>
+  deafened:
+    name: Deafened
+    slug: deafened
+    description: <markdown(conditions/deafened.md)>
+  disabled:
+    name: Disabled
+    slug: disabled
+    description: <markdown(conditions/disabled.md)>
+  dying:
+    name: Dying
+    slug: dying
+    description: <markdown(conditions/dying.md)>
+  energy-drained:
+    name: Energy Drained
+    slug: energy-drained
+    description: <markdown(conditions/energy-drained.md)>
+  entangled:
+    name: Entangled
+    slug: entangled
+    description: <markdown(conditions/entangled.md)>
+  exhausted:
+    name: Exhausted
+    slug: exhausted
+    description: <markdown(conditions/exhausted.md)>
+  fascinated:
+    name: Fascinated
+    slug: fascinated
+    description: <markdown(conditions/fascinated.md)>
+  fatigued:
+    name: Fatigued
+    slug: fatigued
+    description: <markdown(conditions/fatigued.md)>
+  flat-footed:
+    name: Flat-Footed
+    slug: flat-footed
+    description: <markdown(conditions/flat-footed.md)>
+  frightened:
+    name: Frightened
+    slug: frightened
+    description: <markdown(conditions/frightened.md)>
+  grappled:
+    name: Grappled
+    slug: grappled
+    description: <markdown(conditions/grappled.md)>
+  helpless:
+    name: Helpless
+    slug: helpless
+    description: <markdown(conditions/helpless.md)>
+  incorporeal:
+    name: Incorporeal
+    slug: incorporeal
+    description: <markdown(conditions/incorporeal.md)>
+  invisible:
+    name: Invisible
+    slug: invisible
+    description: <markdown(conditions/invisible.md)>
+  nauseated:
+    name: Nauseated
+    slug: nauseated
+    description: <markdown(conditions/nauseated.md)>
+  panicked:
+    name: Panicked
+    slug: panicked
+    description: <markdown(conditions/panicked.md)>
+  paralyzed:
+    name: Paralyzed
+    slug: paralyzed
+    description: <markdown(conditions/paralyzed.md)>
+  petrified:
+    name: Petrified
+    slug: petrified
+    description: <markdown(conditions/petrified.md)>
+  pinned:
+    name: Pinned
+    slug: pinned
+    description: <markdown(conditions/pinned.md)>
+  prone:
+    name: Prone
+    slug: prone
+    description: <markdown(conditions/prone.md)>
+  shaken:
+    name: Shaken
+    slug: shaken
+    description: <markdown(conditions/shaken.md)>
+  sickened:
+    name: Sickened
+    slug: sickened
+    description: <markdown(conditions/sickened.md)>
+  stable:
+    name: Stable
+    slug: stable
+    description: <markdown(conditions/stable.md)>
+  staggered:
+    name: Staggered
+    slug: staggered
+    description: <markdown(conditions/staggered.md)>
+  stunned:
+    name: Stunned
+    slug: stunned
+    description: <markdown(conditions/stunned.md)>
+  unconscious:
+    name: Unconscious
+    slug: unconscious
+    description: <markdown(conditions/unconscious.md)>
