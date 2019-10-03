@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use ApiPlatform\Core\Annotation\ApiFilter;
 use ApiPlatform\Core\Annotation\ApiResource;
-use ApiPlatform\Core\DataProvider\CollectionDataProviderInterface;
 use App\Entity\Traits\HasSourceTrait;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -14,13 +13,16 @@ use ApiPlatform\Core\Bridge\Doctrine\Orm\Filter\SearchFilter;
 
 /**
  * @ApiResource(
- *     collectionOperations={"get"={"method"="GET"}},
+ *     collectionOperations={
+ *           "get"={"method"="GET"}
+ *     },
  *     itemOperations={"get"={"method"="GET"}},
  *     normalizationContext={"groups"={"read"}},
  *     denormalizationContext={"groups"={"write"}},
  *     attributes={"order"={"name"}}
  * )
  * @ApiFilter(SearchFilter::class, properties={"name": "partial"})
+ * @ApiFilter(SearchFilter::class, properties={"spellClassLevels.characterClass.name": "partial"})
  * @ORM\Entity(repositoryClass="App\Repository\SpellRepository")
  */
 class Spell extends ApiBase

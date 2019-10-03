@@ -12,6 +12,15 @@
             </form>
         </div>
         <div class="col-xs-12 col-md-6">
+            <h3>By class</h3>
+            <ul>
+                {% set classes = ['Bard','Cleric','Druid','Paladin','Ranger','Sorcerer','Wizard'] %}
+                {% for class in classes %}
+                    <li><a href="{{ path('api_spells_get_collection', {_format:'json', 'spellClassLevels.characterClass.name': class }) }}">{{ class }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="col-xs-12 col-md-6">
             <h3>Magic Schools</h3>
             <ul>
                 <li><a href="{{ path('api_schools_get_collection', {_format:'json'}) }}">All Schools</a></li>

@@ -12,14 +12,16 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * @ApiResource(
- *     collectionOperations={"get"={"method"="GET"}},
+ *     collectionOperations={
+ *          "get"={"method"="GET"},
+ *     },
  *     itemOperations={
  *          "get"={"method"="GET"},
  *          "get-base"={
  *              "method"="GET",
  *              "normalization_context"={"groups"={"read-base"}},
  *              "path"=" /classes/short/{id}.{_format}"
- *          }
+ *          },
  *     },
  *     normalizationContext={"groups"={"read"}},
  *     denormalizationContext={"groups"={"write"}},
